@@ -15,7 +15,7 @@ import uiuxLogo from "@/assets/images/courses-logo/ui-ux-design.png";
 import wordpressLogo from "@/assets/images/courses-logo/wordpress.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import logo from "/public/flytech-White.png";
@@ -90,6 +90,14 @@ const Header = () => {
     ];
 
     const [isDropdownClicked, setIsDropdownClicked] = useState(false);
+
+    const handleMouseToggle = useCallback((state) => {
+        setIsDropdownClicked(state);
+    }, []);
+
+    const handleClick = useCallback(() => {
+        setIsDropdownClicked((prev) => !prev);
+    }, []);
     return (
         <header className="py-4 border-b border-gray-700/50 backdrop:blur relative z-10">
             <div className="flex justify-between items-center max-width">
@@ -109,8 +117,9 @@ const Header = () => {
                         </li>
                         <li
                             className=" relative"
-                            onMouseEnter={() => setIsDropdownClicked(true)}
-                            onMouseLeave={() => setIsDropdownClicked(false)}
+                            onMouseEnter={() => handleMouseToggle(true)}
+                            onMouseLeave={() => handleMouseToggle(false)}
+                            onClick={handleClick}
                         >
                             <span className="flex items-center gap-2 cursor-pointer ">
                                 Courses <IoIosArrowDown />
