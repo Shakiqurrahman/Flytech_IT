@@ -8,6 +8,8 @@ body {
     background: #030014;
     color: white;
     font-family: "Geologica", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .max-width {

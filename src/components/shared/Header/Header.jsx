@@ -91,7 +91,7 @@ const Header = () => {
 
     const [isDropdownClicked, setIsDropdownClicked] = useState(false);
     return (
-        <header className="py-4 border-b border-gray-700/50 backdrop:blur relative">
+        <header className="py-4 border-b border-gray-700/50 backdrop:blur relative z-10">
             <div className="flex justify-between items-center max-width">
                 <div>
                     <Image src={logo} alt="Flytech It" className="w-40" />
@@ -114,14 +114,14 @@ const Header = () => {
                             }
                         >
                             <span className="flex items-center gap-2 cursor-pointer ">
-                                Courses <IoIosArrowDown/>
+                                Courses <IoIosArrowDown />
                             </span>
                             <ul
                                 className={`${
                                     isDropdownClicked
                                         ? "opacity-100 visible"
                                         : "invisible opacity-0"
-                                } duration-300 grid gap-5 grid-cols-3 w-[800px] absolute z-10 bg-black border border-gray-700 p-4 rounded-sm top-[40px] left-1/2 -translate-x-1/2 backdrop:blur-sm bg-gradient-to-r from-[#030014] to-[#0A001F]`}
+                                } duration-300 grid gap-x-6 gap-y-8 grid-cols-3 w-[1000px] absolute z-10 bg-black border border-gray-700/50 p-8 rounded-lg top-[40px] left-1/2 -translate-x-1/2 backdrop:blur-sm bg-gradient-to-r from-[#030014] to-[#0A001F]`}
                             >
                                 {courses?.map((course, index) => (
                                     <li
@@ -131,7 +131,7 @@ const Header = () => {
                                         <Image
                                             src={course?.logo}
                                             alt={course?.name}
-                                            className="w-10"
+                                            className="w-8"
                                         />
                                         <Link
                                             href={course?.link}
