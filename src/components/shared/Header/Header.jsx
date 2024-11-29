@@ -109,9 +109,8 @@ const Header = () => {
                         </li>
                         <li
                             className=" relative"
-                            onClick={() =>
-                                setIsDropdownClicked(!isDropdownClicked)
-                            }
+                            onMouseEnter={() => setIsDropdownClicked(true)}
+                            onMouseLeave={() => setIsDropdownClicked(false)}
                         >
                             <span className="flex items-center gap-2 cursor-pointer ">
                                 Courses <IoIosArrowDown />
