@@ -121,12 +121,12 @@ const Header = () => {
                                     isDropdownClicked
                                         ? "opacity-100 visible"
                                         : "invisible opacity-0"
-                                } duration-300 grid gap-x-6 gap-y-8 grid-cols-3 w-[1000px] absolute z-10 bg-black border border-gray-700/50 p-8 rounded-lg top-[40px] left-1/2 -translate-x-1/2 backdrop:blur-sm bg-gradient-to-r from-[#030014] to-[#0A001F]`}
+                                } duration-300 grid gap-x-2 gap-y-4 grid-cols-3 w-[1000px] absolute z-10 bg-blac border border-gray-700/50 p-6 rounded-lg top-[40px] left-1/2 -translate-x-1/2  bg-[#030014]/20 backdrop-blur-[25px]`}
                             >
                                 {courses?.map((course, index) => (
                                     <li
                                         key={index}
-                                        className="flex items-center gap-2"
+                                        className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
                                     >
                                         <Image
                                             src={course?.logo}
