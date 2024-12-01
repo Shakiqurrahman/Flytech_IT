@@ -4,8 +4,12 @@ import Reviews from "@/components/Reviews";
 export default function Home() {
     return (
         <>
-            <Hero />
-            <Reviews />
+            <div className="mb-10">
+                <Hero />
+            </div>
+            <div className="my-20">
+                <Reviews />
+            </div>
         </>
     );
 }
