@@ -34,3 +34,9 @@ body {
     background-size: 400% 400%;
     animation: gradientMove 10s ease infinite;
 }
+
+@layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}
