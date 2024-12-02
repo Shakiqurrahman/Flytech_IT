@@ -94,7 +94,7 @@ const Header = () => {
   const [isDropdownClicked, setIsDropdownClicked] = useState(false);
   const [isToggle, setIsToggle] = useState(false);
   const [headerHeight, setHeaderHight] = useState(0);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState(0);
 
   const handleMouseToggle = useCallback((state) => {
     setIsDropdownClicked(state);
