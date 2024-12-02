@@ -238,70 +238,72 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <nav
-                className={`${
-                    isToggle ? "translate-x-0" : "-translate-x-full"
-                } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500 h-[calc(100vh_-_80px)] overflow-y-auto sidebar-scrollbar`}
-            >
-                <ul className="font-medium text-base *:my-5">
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link href="/services">Services</Link>
-                    </li>
-                    <li onClick={handleClick}>
-                        <span className="flex items-center gap-2 cursor-pointer ">
-                            Courses{" "}
-                            <IoIosArrowDown
-                                className={`${
-                                    isDropdownClicked
-                                        ? "-rotate-180"
-                                        : "rotate-0"
-                                } duration-300`}
-                            />
-                        </span>
-                        <ul
-                            ref={dropdownRef}
-                            style={{
-                                height: isDropdownClicked
-                                    ? dropdownRef?.current.scrollHeight
-                                    : 0,
-                                overflow: "hidden",
-                                transition: "height 0.3s ease",
-                            }}
-                        >
-                            {courses?.map((course, index) => (
-                                <li
-                                    key={index}
-                                    className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
-                                >
-                                    <Image
-                                        src={course?.logo}
-                                        alt={course?.name}
-                                        className="w-8"
-                                    />
-                                    <Link
-                                        href={course?.link}
-                                        className="font-semibold text-sm"
+            <div className="">
+                <nav
+                    className={`${
+                        isToggle ? "translate-x-0" : "-translate-x-full"
+                    } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500 h-[calc(100vh_-_77px)] overflow-y-auto sidebar-scrollbar`}
+                >
+                    <ul className="font-medium text-base *:my-5">
+                        <li>
+                            <Link href="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link href="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/services">Services</Link>
+                        </li>
+                        <li onClick={handleClick}>
+                            <span className="flex items-center gap-2 cursor-pointer ">
+                                Courses{" "}
+                                <IoIosArrowDown
+                                    className={`${
+                                        isDropdownClicked
+                                            ? "-rotate-180"
+                                            : "rotate-0"
+                                    } duration-300`}
+                                />
+                            </span>
+                            <ul
+                                ref={dropdownRef}
+                                style={{
+                                    height: isDropdownClicked
+                                        ? dropdownRef?.current.scrollHeight
+                                        : 0,
+                                    overflow: "hidden",
+                                    transition: "height 0.3s ease",
+                                }}
+                            >
+                                {courses?.map((course, index) => (
+                                    <li
+                                        key={index}
+                                        className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
                                     >
-                                        {course?.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                    <li>
-                        <Link href="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
+                                        <Image
+                                            src={course?.logo}
+                                            alt={course?.name}
+                                            className="w-8"
+                                        />
+                                        <Link
+                                            href={course?.link}
+                                            className="font-semibold text-sm"
+                                        >
+                                            {course?.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
+                        <li>
+                            <Link href="/portfolio">Portfolio</Link>
+                        </li>
+                        <li>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 };
