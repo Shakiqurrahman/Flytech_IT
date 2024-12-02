@@ -107,6 +107,7 @@ const Header = () => {
         } else {
             document.body.style.overflowY = "auto";
         }
+        setIsDropdownClicked(false);
     }, [isToggle]);
     return (
         <header className="border-b border-gray-700/50 backdrop:blur relative z-10">
@@ -240,7 +241,7 @@ const Header = () => {
             <nav
                 className={`${
                     isToggle ? "translate-x-0" : "-translate-x-full"
-                } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500 h-[calc(100vh_-_110px)] overflow-y-auto sidebar-scrollbar`}
+                } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500 h-[calc(100vh_-_80px)] overflow-y-auto sidebar-scrollbar`}
             >
                 <ul className="font-medium text-base *:my-5">
                     <li>
@@ -252,7 +253,7 @@ const Header = () => {
                     <li>
                         <Link href="/services">Services</Link>
                     </li>
-                    <li className="" onClick={handleClick}>
+                    <li onClick={handleClick}>
                         <span className="flex items-center gap-2 cursor-pointer ">
                             Courses{" "}
                             <IoIosArrowDown
