@@ -5,38 +5,75 @@
 @tailwind utilities;
 
 body {
-    background: #030014;
-    color: white;
-    font-family: "Geologica", sans-serif;
-    max-width: 100%;
-    overflow-x: hidden;
+  background: #030014;
+  color: white;
+  font-family: "Geologica", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .max-width {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 16px;
 }
 
 @keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-gradient {
-    background: linear-gradient(45deg, #450103, #4f0239, #01506e, #0d0258);
-    background-size: 400% 400%;
-    animation: gradientMove 10s ease infinite;
+  background: linear-gradient(45deg, #450103, #4f0239, #01506e, #0d0258);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
 }
 
 @layer base {
   :root {
-        --radius: 0.5rem;
-    }
+    --radius: 0.5rem;
+  }
 }
+
+/* toggle button animation start */
+.toggleOn > div:nth-child(1) {
+  top: 50%;
+  transform: translateY(-100%) rotate(45deg);
+  transition: top 0.2s 0.2s, transform 0.2s 0.2s, transform 0.2s 0.4s;
+}
+.toggleOn > div:nth-child(2) {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-100%) rotate(-45deg);
+  transition: width 0.2s, transform 0.2s 0.4s;
+}
+.toggleOn > div:nth-child(3) {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.toggleOff > div:nth-child(1) {
+  top: 0;
+  transform: translateY(0) rotate(0);
+  transition: top 0.2s 0.2s, transform 0.2s 0.2s, transform 0.2s;
+}
+.toggleOff > div:nth-child(2) {
+  width: 70%;
+  top: 50%;
+  transform: translateY(-100%) rotate(0);
+  transition: width 0.2s 0.4s, transform 0.2s;
+}
+.toggleOff > div:nth-child(3) {
+  opacity: 100;
+  visibility: visible;
+  transition: 0.2s 0.4s;
+}
+/* toggle button animation end */
