@@ -246,12 +246,12 @@ const Header = () => {
       <nav
         className={`${
           isToggle ? "translate-x-0" : "-translate-x-full"
-        } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500 overflow-y-auto sidebar-scrollbar`}
+        } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500`}
         style={{
           height: `calc(100vh - ${headerHeight}px)`,
         }}
       >
-        <ul className="font-medium text-base *:my-5">
+        <ul className="font-medium h-full text-base *:my-5 overflow-y-auto sidebar-scrollbar">
           <li>
             <Link href="/">Home</Link>
           </li>
