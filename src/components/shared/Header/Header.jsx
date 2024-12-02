@@ -94,6 +94,7 @@ const Header = () => {
   const [isDropdownClicked, setIsDropdownClicked] = useState(false);
   const [isToggle, setIsToggle] = useState(false);
   const [headerHeight, setHeaderHight] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   const handleMouseToggle = useCallback((state) => {
     setIsDropdownClicked(state);
@@ -111,6 +112,17 @@ const Header = () => {
     }
     setIsDropdownClicked(false);
   }, [isToggle]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (headerRef?.current) {
@@ -248,7 +260,7 @@ const Header = () => {
           isToggle ? "translate-x-0" : "-translate-x-full"
         } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500`}
         style={{
-          height: `calc(100vh - ${headerHeight}px)`,
+          height: `calc(${windowHeight}px - ${headerHeight}px)`,
         }}
       >
         <ul className="font-medium h-full text-base *:my-5 overflow-y-auto sidebar-scrollbar">
