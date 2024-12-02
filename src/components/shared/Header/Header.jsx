@@ -238,7 +238,6 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
                 <nav
                     className={`${
                         isToggle ? "translate-x-0" : "-translate-x-full"
@@ -303,7 +302,6 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
-            </div>
         </header>
     );
 };

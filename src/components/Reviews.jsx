@@ -7,7 +7,7 @@ const Reviews = () => {
     const secondRow = reviewsData.slice(reviewsData.length / 2);
     return (
         <>
-            <h1 className="text-center font-semibold text-2xl sm:text-5xl mb-1">
+            <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-1">
                 Student <span className="text-blue-500">Reviews</span>
             </h1>
             <p className="text-center text-gray-300 text-sm sm:text-base">
