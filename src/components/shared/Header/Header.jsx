@@ -260,7 +260,7 @@ const Header = () => {
           isToggle ? "translate-x-0" : "-translate-x-full"
         } block md:hidden absolute top-full left-0 w-full p-4 pl-8 bg-body/10 backdrop-blur-[25px] z-[9] duration-500`}
         style={{
-          height: `calc(${windowHeight}px - ${headerHeight}px)`,
+          height: `calc(${windowHeight + 2}px - ${headerHeight}px)`,
         }}
       >
         <ul className="font-medium h-full text-base *:my-5 overflow-y-auto sidebar-scrollbar">
