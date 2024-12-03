@@ -1,11 +1,8 @@
-'use client'
-
-import animationData from "@/assets/images/Animation.json";
 import triangleShape from "@/assets/images/shapes/hero-triangle.png";
 import triangleShape2 from "@/assets/images/shapes/triangle-shape.png";
 import { avatars } from "@/constants/avatarsData";
-import Lottie from "lottie-react";
 import Image from "next/image";
+import AnimatedHero from "./AnimatedHero";
 import AvatarCircles from "./ui/avatar-circles";
 import NumberTicker from "./ui/number-ticker";
 import Particles from "./ui/particles";
@@ -32,8 +29,8 @@ const Hero = () => {
                         alt="hero shape"
                         className="absolute left-1/2 bottom-10 animate-spin-slow"
                     />
-                    <div className="relative  flex flex-col md:flex-row justify-center items-center min-h-[60vh] sm:min-h-[70vh]">
-                        <div className=" mb-10 w-full">
+                    <div className="relative  flex flex-col md:flex-row justify-center items-center mt-32 mb-16">
+                        <div className=" mb-10 w-full md:w-2/5">
                             <p className="uppercase tracking-[7px] text-sm text-blue-500">
                                 Education Solution
                             </p>
@@ -60,8 +57,8 @@ const Hero = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-full">
-                            <Lottie animationData={animationData} />
+                        <div className="w-full md:w-3/5">
+                            <AnimatedHero />
                         </div>
                     </div>
                     <div className="text-center max-w-[1000px] mx-auto">
