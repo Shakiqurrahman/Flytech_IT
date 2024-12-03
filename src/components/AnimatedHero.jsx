@@ -11,7 +11,7 @@ const AnimatedHero = () => {
                 src="/Animation.lottie"
                 loop
                 autoplay
-                className="size-full"
+                className="size-full select-none pointer-events-none"
             />
         </>
     );
