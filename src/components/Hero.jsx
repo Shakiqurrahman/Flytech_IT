@@ -1,11 +1,18 @@
 import { avatars } from "@/constants/avatarsData";
 import AvatarCircles from "./ui/avatar-circles";
 import NumberTicker from "./ui/number-ticker";
+import Particles from "./ui/particles";
 
 const Hero = () => {
     return (
         <section>
             <div className="relative w-full">
+                <Particles
+                    className="absolute inset-0"
+                    quantity={150}
+                    ease={50}
+                    refresh
+                />
                 <div className="max-w-[1600px] w-full rounded-full h-[400px] bg-gradient-to-b from-transparent from-0% via-95% to-100% via-blue-900 to-transparent absolute left-1/2 -translate-x-1/2 blur-[200px] animate-gradient"></div>
                 <div className="max-width min-h-[calc(100vh_-_90px)]">
                     <div className="relative  flex flex-col md:flex-row justify-center items-center min-h-[60vh] sm:min-h-[70vh]">
