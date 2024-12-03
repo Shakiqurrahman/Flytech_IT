@@ -9,10 +9,13 @@ import {
 const Accordions = () => {
     return (
         <div className="max-w-[800px] p-4 mx-auto">
-            <h1 className="text-center text-2xl sm:text-4xl font-semibold mb-10">
+            <h1 className="text-center text-2xl sm:text-4xl font-semibold mb-1">
                 Frequently{" "}
                 <span className="text-blue-500">Asked Questions</span>
             </h1>
+            <p className="text-center  mb-10 tracking-widest text-gray-300 text-sm sm:text-base">
+                Quick Answers to Common Questions
+            </p>
             <Accordion type="single" collapsible className="w-full">
                 {faqData?.map((faq) => (
                     <AccordionItem
@@ -20,7 +23,9 @@ const Accordions = () => {
                         value={faq?.id}
                         className="border-none"
                     >
-                        <AccordionTrigger className='text-left'>{faq?.question}</AccordionTrigger>
+                        <AccordionTrigger className="text-left text-[17px]">
+                            {faq?.question}
+                        </AccordionTrigger>
                         <AccordionContent>
                             {faq?.answer}
                             <div className="mt-4 font-extralight">
