@@ -1,18 +1,6 @@
 "use client";
 
-import laravelLogo from "@/assets/images/courses-logo/Laravel.png";
-import seoLogo from "@/assets/images/courses-logo/SEO.png";
-import basicLogo from "@/assets/images/courses-logo/basic-computer-course.png";
-import cyberLogo from "@/assets/images/courses-logo/cyber-security.png";
-import devOpsLogo from "@/assets/images/courses-logo/devops.png";
-import dJangoLogo from "@/assets/images/courses-logo/django.png";
-import flutterLogo from "@/assets/images/courses-logo/flutter.png";
-import graphicsLogo from "@/assets/images/courses-logo/graphic-design.png";
-import mernLogo from "@/assets/images/courses-logo/mern-stack.png";
-import pyhtonLogo from "@/assets/images/courses-logo/python.png";
-import marketingLogo from "@/assets/images/courses-logo/social-media-marketing-service.png";
-import uiuxLogo from "@/assets/images/courses-logo/ui-ux-design.png";
-import wordpressLogo from "@/assets/images/courses-logo/wordpress.png";
+import { coursesNavLink } from "@/constants/coursesNavLinkData";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -21,74 +9,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import logo from "/public/flytech-White.png";
 
 const Header = () => {
-    const courses = [
-        {
-            name: "Web Design & Development with PHP, LARAVEL",
-            link: "",
-            logo: laravelLogo,
-        },
-        {
-            name: "MERN Stack, Next Js",
-            link: "",
-            logo: mernLogo,
-        },
-        {
-            name: "Cyber Security & Ethical Hacking",
-            link: "",
-            logo: cyberLogo,
-        },
-        {
-            name: "Programming With Python",
-            link: "",
-            logo: pyhtonLogo,
-        },
-        {
-            name: "Python & Django, DevOps Web & Software Development",
-            link: "",
-            logo: dJangoLogo,
-        },
-        {
-            name: "Python Software developer With DevOps",
-            link: "",
-            logo: devOpsLogo,
-        },
-        {
-            name: "Flutter Mobile Apps Development",
-            link: "",
-            logo: flutterLogo,
-        },
-        {
-            name: "Graphics Design",
-            link: "",
-            logo: graphicsLogo,
-        },
-        {
-            name: "Basic Computer & Office Job, Data Entry",
-            link: "",
-            logo: basicLogo,
-        },
-        {
-            name: "Social Media Marketing",
-            link: "",
-            logo: marketingLogo,
-        },
-        {
-            name: "Website SEO Basic To Advanced",
-            link: "",
-            logo: seoLogo,
-        },
-        {
-            name: "Wordpress",
-            link: "",
-            logo: wordpressLogo,
-        },
-        {
-            name: "UX/UI Design",
-            link: "",
-            logo: uiuxLogo,
-        },
-    ];
-
     const dropdownRef = useRef(null);
     const headerRef = useRef(null);
     const [isDropdownClicked, setIsDropdownClicked] = useState(false);
@@ -112,15 +32,6 @@ const Header = () => {
         }
         setIsDropdownClicked(false);
     }, [isToggle]);
-
-    useEffect(() => {
-      const mainElement = document.getElementById("main");
-        if (isDropdownClicked) {
-          mainElement.classList.add("blur-[25px]");
-        } else {
-          mainElement.classList.remove("blur-[25px]");
-        }
-    }, [isDropdownClicked]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -149,7 +60,7 @@ const Header = () => {
                     <Image
                         src={logo}
                         alt="Flytech It"
-                        className="w-32 sm:w-40"
+                        className="w-28 sm:w-32"
                     />
                 </div>
                 <nav className="hidden md:block">
@@ -194,7 +105,7 @@ const Header = () => {
                                         : "invisible opacity-0"
                                 } duration-300 grid gap-x-2 gap-y-4 grid-cols-3 w-[90%] max-w-[1000px] absolute z-10 bg-blac border border-gray-700/50 p-6 rounded-lg top-[70px] left-1/2 -translate-x-1/2  bg-[#030014]/20 backdrop-blur-[25px]`}
                             >
-                                {courses?.map((course, index) => (
+                                {coursesNavLink?.map((course, index) => (
                                     <li
                                         key={index}
                                         className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
@@ -310,7 +221,7 @@ const Header = () => {
                                 transition: "height 0.3s ease",
                             }}
                         >
-                            {courses?.map((course, index) => (
+                            {coursesNavLink?.map((course, index) => (
                                 <li
                                     key={index}
                                     className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"

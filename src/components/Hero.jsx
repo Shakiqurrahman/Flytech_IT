@@ -1,4 +1,11 @@
+'use client'
+
+import animationData from "@/assets/images/Animation.json";
+import triangleShape from "@/assets/images/shapes/hero-triangle.png";
+import triangleShape2 from "@/assets/images/shapes/triangle-shape.png";
 import { avatars } from "@/constants/avatarsData";
+import Lottie from "lottie-react";
+import Image from "next/image";
 import AvatarCircles from "./ui/avatar-circles";
 import NumberTicker from "./ui/number-ticker";
 import Particles from "./ui/particles";
@@ -7,6 +14,11 @@ const Hero = () => {
     return (
         <section>
             <div className="relative w-full">
+                <Image
+                    src={triangleShape}
+                    alt="hero shape"
+                    className="absolute left-4 sm:left-20 top-5 animate-moveLeftRight"
+                />
                 <Particles
                     className="absolute inset-0"
                     quantity={150}
@@ -15,8 +27,16 @@ const Hero = () => {
                 />
                 <div className="max-w-[1600px] w-full rounded-full h-[400px] bg-gradient-to-b from-transparent from-0% via-95% to-100% via-blue-900 to-transparent absolute left-1/2 -translate-x-1/2 blur-[200px] animate-gradient"></div>
                 <div className="max-width min-h-[calc(100vh_-_90px)]">
+                    <Image
+                        src={triangleShape2}
+                        alt="hero shape"
+                        className="absolute left-1/2 bottom-10 animate-spin-slow"
+                    />
                     <div className="relative  flex flex-col md:flex-row justify-center items-center min-h-[60vh] sm:min-h-[70vh]">
                         <div className=" mb-10 w-full">
+                            <p className="uppercase tracking-[7px] text-sm text-blue-500">
+                                Education Solution
+                            </p>
                             <h1 className="text-5xl sm:text-7xl w-full sm:w-[500px] font-bold">
                                 Elevate Your Career!
                             </h1>
@@ -34,13 +54,15 @@ const Hero = () => {
                                             value={1000}
                                             className="text-white"
                                         />
-                                        +
+                                        +{" "}
                                     </span>
                                     Satisfied Students
                                 </p>
                             </div>
                         </div>
-                        <div className="w-full"></div>
+                        <div className="w-full">
+                            <Lottie animationData={animationData} />
+                        </div>
                     </div>
                     <div className="text-center max-w-[1000px] mx-auto">
                         <p className=" mb-2">
