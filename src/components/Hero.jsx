@@ -31,15 +31,21 @@ const Hero = () => {
                     />
                     <div className="relative  flex flex-col md:flex-row justify-center items-center mt-32 mb-16">
                         <div className=" mb-10 w-full md:w-2/5">
-                            <p className="uppercase tracking-[7px] text-sm text-blue-500">
-                                Education Solution
-                            </p>
+                            <div className="flex items-center gap-2">
+                                <div className="bg-greenish w-5 h-2 rounded-full"></div>
+                                <p className="uppercase tracking-[4px] text-xs text-gray-300">
+                                    Education Solution
+                                </p>
+                            </div>
                             <h1 className="text-5xl sm:text-7xl w-full sm:w-[500px] font-bold">
                                 Elevate Your Career!
                             </h1>
-                            <p className="bg-blue-500 py-2 px-5 rounded-md mt-4 inline-block">
+                            <p className="bg-blueish py-2 px-5 rounded-md mt-4 inline-block">
                                 Learn Skills. Achieve Success.
                             </p>
+                            {/* <p className="bg-greenish py-2 px-5 rounded-md mt-4 inline-block">
+                                Learn Skills. Achieve Success.
+                            </p> */}
                             <div className="space-y-2 mt-10 mb-4">
                                 <AvatarCircles
                                     numPeople={1000}

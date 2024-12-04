@@ -10,6 +10,9 @@ module.exports = {
         extend: {
             colors: {
                 body: "#030014",
+                greenish: "#21b573",
+                yellowish: "#faaf3a",
+                blueish: "#3b81f5",
             },
             backgroundImage: {
                 "dark-gradient":
@@ -56,9 +59,9 @@ module.exports = {
                     },
                 },
                 moveLeftRight: {
-                    '0%, 100%': { transform: 'translateX(0)' },
-                    '50%': { transform: 'translateX(40px)' },
-                  },
+                    "0%, 100%": { transform: "translateX(0)" },
+                    "50%": { transform: "translateX(40px)" },
+                },
             },
             animation: {
                 marquee: "marquee var(--duration) infinite linear",
