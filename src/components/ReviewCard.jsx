@@ -6,7 +6,7 @@ const ReviewCard = ({ img, name, body }) => {
         <figure
             className={cn(
                 "relative w-[300px] sm:w-[400px] cursor-pointer overflow-hidden rounded-xl border p-4 sm:p-6",
-                "border-gray-50/[.1] bg-gradient-to-tl from-[#01506e]/30 via-[#4f0239]/20 to-[#0d0258]/25  hover:bg-gray-50/[.05]"
+                "border-gray-50/[.1] bg-gradient-to-tl from-[#01506e]/30 via-[#4f0239]/20 to-[#0d0258]/25  hover:bg-gray-50/[.05] font-bangla"
             )}
         >
             <div className="flex flex-row items-center gap-2">
@@ -23,7 +23,7 @@ const ReviewCard = ({ img, name, body }) => {
                     </figcaption>
                 </div>
             </div>
-            <blockquote className="mt-4 text-sm font-normal line-clamp-5 leading-relaxed">
+            <blockquote className="mt-4 text-base font-normal line-clamp-5 leading-relaxed">
                 {body}
             </blockquote>
         </figure>
