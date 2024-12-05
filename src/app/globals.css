@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .animate-gradient {
-    background: linear-gradient(45deg, #450103, #4f0239, #01506e, #0d0258);
+    background: linear-gradient(45deg, #450103, #4f4f4f55, #01506e, #0d0258);
     background-size: 400% 400%;
     animation: gradientMove 10s ease infinite;
 }
