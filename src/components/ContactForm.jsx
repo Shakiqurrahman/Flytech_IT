@@ -29,7 +29,7 @@ const ContactForm = () => {
 
     return (
         <form
-            className="rounded-lg overflow-hidden border -mt-[200px] relative"
+            className="rounded-lg overflow-hidden border border-slate-800 -mt-[200px] relative"
             onSubmit={handleSubmit}
         >
             <h1
