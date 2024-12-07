@@ -3,6 +3,10 @@ import offerShape from "@/assets/images/shapes/offer-shape.png";
 import Image from "next/image";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
+import CourseConsultationForm from "./CourseConsultationForm";
+import CourseFAQ from "./CourseFAQ";
+import Instructors from "./Instructors";
+import Multitabs from "./Multitabs";
 
 const Courses = () => {
   return (
@@ -15,7 +19,7 @@ const Courses = () => {
               alt="Course Thumbnail"
               className="w-full rounded-lg"
             />
-            <h1 className="text-3xl font-semibold my-5">
+            <h1 className="text-3xl font-semibold mt-5 mb-10">
               Data Science and Machine Learning Career Path
             </h1>
             <div className="flex items-center bg-dark-gradient rounded-lg p-6 justify-around shadow">
@@ -32,6 +36,10 @@ const Courses = () => {
                 <p className="text-lg">Total Lessons</p>
               </div>
             </div>
+            <Multitabs />
+            <Instructors />
+            <CourseFAQ />
+            <CourseConsultationForm />
           </div>
         </div>
         <div className="w-[380px] shrink-0 sticky top-0">
