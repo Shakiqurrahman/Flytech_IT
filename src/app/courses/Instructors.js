@@ -7,7 +7,7 @@ const Instructors = () => {
       <h1 className="text-center text-2xl font-medium text-blue-400 my-10">
         কোর্স ইনস্ট্রাক্টর
       </h1>
-      <div className="grid gap-4 grid-cols-2">
+      <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
         <div className="bg-dark-gradient-alt p-5 rounded">
           <div className="flex items-center gap-2">
             <Image

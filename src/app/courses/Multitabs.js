@@ -119,8 +119,8 @@ const Multitabs = () => {
         );
       case "community":
         return (
-          <div className="flex gap-4">
-            <div className="w-1/2 px-10 py-5 rounded-lg bg-[#141c2c] shadow text-center">
+          <div className="flex flex-wrap sm:flex-nowrap gap-4">
+            <div className="w-full sm:w-1/2 px-10 py-5 rounded-lg bg-[#141c2c] shadow text-center">
               <h1 className="text-lg font-semibold mb-3">
                 Desperately Seeking Programmers
               </h1>
@@ -131,7 +131,7 @@ const Multitabs = () => {
                 Join The Group
               </Link>
             </div>
-            <div className="w-1/2 px-10 py-5 rounded-lg bg-[#141c2c] shadow text-center">
+            <div className="w-full sm:w-1/2 px-10 py-5 rounded-lg bg-[#141c2c] shadow text-center">
               <h1 className="text-lg font-semibold mb-3">
                 Interactive Cares Official Group
               </h1>
@@ -173,7 +173,7 @@ const Multitabs = () => {
   };
   return (
     <div className="w-full">
-      <div className="flex items-center border-b my-5">
+      <div className="flex items-center border-b my-5 overflow-x-auto overflow-y-hidden">
         {buttons?.map((btn, i) => (
           <button
             key={i}
