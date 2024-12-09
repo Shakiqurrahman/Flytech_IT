@@ -3,9 +3,9 @@ import { AllCoursesData } from "@/constants/coursesData";
 import Image from "next/image";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
-import CourseFAQ from "./CourseFAQ";
-import Instructors from "./Instructors";
-import Multitabs from "./Multitabs";
+import CourseFAQ from "../../components/courses/CourseFAQ";
+import Instructors from "../../components/courses/Instructors";
+import Multitabs from "../../components/courses/Multitabs";
 
 const Courses = () => {
   const slug = "web-development-with-python-django-react-batch-11";
