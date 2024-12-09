@@ -4,16 +4,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { faqData } from "@/constants/faqData";
 
-const CourseFAQ = () => {
+const CourseFAQ = ({ faqs }) => {
   return (
     <div className="mb-10">
       <h1 className="my-10 text-center text-2xl text-blue-400 font-semibold">
         সাধারণ প্রশ্নাবলী
       </h1>
       <Accordion type="single" collapsible className="w-full">
-        {faqData?.map((faq) => (
+        {faqs?.map((faq) => (
           <AccordionItem key={faq?.id} value={faq?.id} className="border-none">
             <AccordionTrigger className="text-left text-[17px]">
               {faq?.question}
