@@ -18,6 +18,7 @@ module.exports = {
     			'dark-gradient': 'linear-gradient(to top left, rgba(79, 2, 57, .25), rgba(1, 80, 110, 0.3))',
     			'dark-gradient-alt': 'linear-gradient(to top left, rgba(1, 80, 110, 0.3), rgba(79, 2, 57, .25))',
 				'linear-fade': 'linear-gradient(rgba(238, 224, 255, 0.06) 0%, rgba(238, 224, 255, 0) 100%)',
+				'linear-fade2': 'linear-gradient(rgba(238, 224, 255, 0.08) 0%, rgba(238, 224, 255, 0) 100%)',
     		},
     		borderRadius: {
     			lg: 'var(--radius)',

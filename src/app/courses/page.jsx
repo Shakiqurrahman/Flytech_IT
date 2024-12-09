@@ -115,7 +115,7 @@ const Courses = () => {
             </div>
           </div>
           <div className="w-[380px] hidden md:block shrink-0 sticky top-0 pt-5">
-            <div className="border border-blue-400 bg-linear-fade rounded-lg p-5">
+            <div className="border border-blue-400 bg-linear-fade2 rounded-lg p-5">
               <h1 className="text-xl mb-5 text-blue-400 font-semibold">
                 কী কী থাকছে এই ক্যারিয়ার পাথে
               </h1>
