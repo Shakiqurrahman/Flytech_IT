@@ -50,6 +50,10 @@ const Header = () => {
         }
     }, [headerRef]);
 
+    const handleClose = () => {
+        setIsToggle(false);
+    };
+
     return (
         <header
             ref={headerRef}
@@ -191,17 +195,17 @@ const Header = () => {
                 }}
             >
                 <ul className="font-medium h-full text-base *:my-5 overflow-y-auto sidebar-scrollbar">
-                    <li>
+                    <li onClick={handleClose}>
                         <Link href="/">Home</Link>
                     </li>
-                    <li>
+                    <li onClick={handleClose}>
                         <Link href="/about">About</Link>
                     </li>
-                    <li>
+                    <li onClick={handleClose}>
                         <Link href="/services">Services</Link>
                     </li>
                     <li onClick={handleClick}>
-                        <span className="flex items-center gap-2 cursor-pointer ">
+                        <span className="flex items-center gap-2 cursor-pointer">
                             Courses{" "}
                             <IoIosArrowDown
                                 className={`${
@@ -224,27 +228,31 @@ const Header = () => {
                             {coursesNavLink?.map((course, index) => (
                                 <li
                                     key={index}
-                                    className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
+                                    onClick={handleClose}
+                                    className="first:pt-3 px-2"
                                 >
-                                    <Image
-                                        src={course?.logo}
-                                        alt={course?.name}
-                                        className="w-8"
-                                    />
                                     <Link
                                         href={course?.link}
-                                        className="font-semibold text-sm"
+                                        className="flex items-center gap-2 hover:bg-white/10 rounded-lg p-4"
                                     >
-                                        {course?.name}
+                                        <Image
+                                            src={course?.logo}
+                                            alt={course?.name}
+                                            className="w-8"
+                                        />
+
+                                        <span className="font-semibold text-sm">
+                                            {course?.name}
+                                        </span>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     </li>
-                    <li>
+                    <li onClick={handleClose}>
                         <Link href="/portfolio">Portfolio</Link>
                     </li>
-                    <li>
+                    <li onClick={handleClose}>
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
