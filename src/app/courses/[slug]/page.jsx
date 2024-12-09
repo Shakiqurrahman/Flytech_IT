@@ -3,16 +3,14 @@ import { AllCoursesData } from "@/constants/coursesData";
 import Image from "next/image";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
-import CourseFAQ from "../../components/courses/CourseFAQ";
-import Instructors from "../../components/courses/Instructors";
-import Multitabs from "../../components/courses/Multitabs";
+import CourseFAQ from "../../../components/courses/CourseFAQ";
+import Instructors from "../../../components/courses/Instructors";
+import Multitabs from "../../../components/courses/Multitabs";
 
-const Courses = () => {
-  const slug = "web-development-with-python-django-react-batch-11";
+const Courses = async({params}) => {
+  const slug =(await params).slug;    
 
-  const allCoursesData = AllCoursesData;
-
-  const courseData = allCoursesData?.find((course) => course?.slug === slug);
+  const courseData = AllCoursesData?.find((course) => course?.slug === slug);  
 
   return (
     <div className="max-width mb-10 mt-5 font-bangla">
@@ -80,6 +78,7 @@ const Courses = () => {
                           src={offerShape}
                           alt="Course Offer Price"
                           className="size-[50px] object-contain"
+                          placeholder="blur"
                         />
                         <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black font-semibold">
                           {courseData?.discount}%

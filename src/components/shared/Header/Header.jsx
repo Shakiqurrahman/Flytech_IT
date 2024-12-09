@@ -60,13 +60,13 @@ const Header = () => {
             className="border-b border-gray-700/50 backdrop:blur relative z-10"
         >
             <div className="flex justify-between items-center max-width md:gap-0 gap-4">
-                <div>
+                <Link href='/'>
                     <Image
                         src={logo}
                         alt="Flytech It"
                         className="w-28 sm:w-32"
                     />
-                </div>
+                </Link>
                 <nav className="hidden md:block">
                     <ul className="flex font-medium text-base">
                         <li>
