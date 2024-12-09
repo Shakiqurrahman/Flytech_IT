@@ -9,7 +9,7 @@ import logo from "/public/flytech-White.png";
 const Footer = () => {
     return (
         <footer className="bg-linear-fade pt-20">
-            <div className="max-width pb-10">
+            <div className="max-width mb-10">
                 <div className="flex justify-between md:flex-nowrap flex-wrap gap-y-8">
                     <div className="w-full sm:w-[70%] md:w-[30%]">
                         <Image
