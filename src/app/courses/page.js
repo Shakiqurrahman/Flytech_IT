@@ -3,7 +3,6 @@ import offerShape from "@/assets/images/shapes/offer-shape.png";
 import Image from "next/image";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
-import CourseConsultationForm from "./CourseConsultationForm";
 import CourseFAQ from "./CourseFAQ";
 import Instructors from "./Instructors";
 import Multitabs from "./Multitabs";
@@ -129,7 +128,6 @@ const Courses = () => {
             <Multitabs />
             <Instructors />
             <CourseFAQ />
-            <CourseConsultationForm />
           </div>
         </div>
         <div className="w-[380px] hidden md:block shrink-0 sticky top-0 pt-5">
