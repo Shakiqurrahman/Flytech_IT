@@ -76,7 +76,7 @@ const Multitabs = ({ desc, willLearn, community, forWhom }) => {
   };
   return (
     <div className="w-full">
-      <div className="flex items-center border-b my-5 overflow-x-auto overflow-y-hidden">
+      <div className="flex items-center border-b border-white/15 my-5 overflow-x-auto overflow-y-hidden">
         {buttons?.map((btn, i) => (
           <button
             key={i}

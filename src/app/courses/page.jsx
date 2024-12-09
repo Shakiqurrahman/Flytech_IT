@@ -17,7 +17,7 @@ const Courses = () => {
   return (
     <div className="max-width mb-10 mt-5 font-bangla">
       {courseData && (
-        <div className="flex gap-5 items-start relative">
+        <div className="flex gap-6 items-start relative">
           <div className="w-full md:w-[calc(100%_-_380px)] pt-5">
             <div>
               <Image
@@ -115,14 +115,14 @@ const Courses = () => {
             </div>
           </div>
           <div className="w-[380px] hidden md:block shrink-0 sticky top-0 pt-5">
-            <div className="border border-blue-400 bg-[#141c2c] rounded-lg p-5">
+            <div className="border border-blue-400 bg-linear-fade rounded-lg p-5">
               <h1 className="text-xl mb-5 text-blue-400 font-semibold">
                 কী কী থাকছে এই ক্যারিয়ার পাথে
               </h1>
               <ul className="mb-10">
                 {courseData?.youWillGet?.map((item, i) => (
                   <li key={i} className="flex items-center gap-2 my-4">
-                    <span className="flex items-center justify-center size-6 rounded-full border-2 border-blue-400">
+                    <span className="flex items-center justify-center size-7 rounded-full border border-white/20 bg-linear-fade">
                       {i + 1}
                     </span>
                     <p className="text-lg">{item}</p>
@@ -156,7 +156,7 @@ const Courses = () => {
                 )}
               </div>
             </div>
-            <div className="border border-blue-400 bg-[#141c2c] rounded-lg p-5 mt-2">
+            <div className="border border-blue-400 bg-linear-fade rounded-lg p-5 mt-3">
               <h1 className="text-center font-semibold text-xl mb-3">
                 Starting Date and Time
               </h1>
