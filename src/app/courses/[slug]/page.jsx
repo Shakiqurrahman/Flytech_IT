@@ -1,7 +1,7 @@
 import offerShape from "@/assets/images/shapes/offer-shape.png";
 import { AllCoursesData } from "@/constants/coursesData";
 import Image from "next/image";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
 import CourseFAQ from "../../../components/courses/CourseFAQ";
@@ -12,9 +12,7 @@ const Courses = async ({ params }) => {
     const slug = (await params).slug;
     const courseData = AllCoursesData?.find((course) => course?.slug === slug);
 
-    if (!courseData) {
-        return redirect("/");
-    }
+    if (!courseData) notFound();
 
     return (
         <div className="max-width mb-10 mt-5 font-bangla">
