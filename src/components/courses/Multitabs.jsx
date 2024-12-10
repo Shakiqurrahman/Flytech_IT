@@ -36,7 +36,7 @@ const Multitabs = ({ desc, willLearn, community, forWhom }) => {
           <ul>
             {willLearn?.map((item, i) => (
               <li key={i} className="flex items-start gap-4 my-3">
-                <IoCheckmarkCircleOutline className="text-blue-400 text-xl" />
+                <IoCheckmarkCircleOutline className="text-blue-400 text-xl shrink-0" />
                 <p className="text-lg -mt-1">👉 {item}</p>
               </li>
             ))}
@@ -66,7 +66,7 @@ const Multitabs = ({ desc, willLearn, community, forWhom }) => {
           <ul>
             {forWhom?.map((item, i) => (
               <li key={i} className="flex items-start gap-4 my-3">
-                <IoCheckmarkCircleOutline className="text-blue-400 text-xl" />
+                <IoCheckmarkCircleOutline className="text-blue-400 text-xl shrink-0" />
                 <p className="text-lg -mt-1">{item}</p>
               </li>
             ))}
