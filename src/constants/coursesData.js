@@ -86,7 +86,7 @@ export const AllCoursesData = [
       "লাইফটাইম অ্যাকসেস",
     ],
     hoursOfLessons: "150+",
-    totalLessons: "60",
+    totalLessons: "৬০",
     students: "161",
     youWillLearn: [
       "পাইথন ফান্ডামেন্টাল",
@@ -258,7 +258,7 @@ export const AllCoursesData = [
       "লাইফটাইম অ্যাকসেস",
     ],
     hoursOfLessons: "150+",
-    totalLessons: "60",
+    totalLessons: "৬০",
     students: "161",
     youWillLearn: [
       "পাইথন ফান্ডামেন্টাল",
@@ -430,7 +430,7 @@ export const AllCoursesData = [
       "লাইফটাইম অ্যাকসেস",
     ],
     hoursOfLessons: "150+",
-    totalLessons: "60",
+    totalLessons: "৪০",
     students: "161",
     youWillLearn: [
       "পাইথন ফান্ডামেন্টাল",
@@ -602,7 +602,7 @@ export const AllCoursesData = [
       "লাইফটাইম অ্যাকসেস",
     ],
     hoursOfLessons: "150+",
-    totalLessons: "60",
+    totalLessons: "৮০",
     students: "161",
     youWillLearn: [
       "পাইথন ফান্ডামেন্টাল",
@@ -774,7 +774,7 @@ export const AllCoursesData = [
       "লাইফটাইম অ্যাকসেস",
     ],
     hoursOfLessons: "150+",
-    totalLessons: "60",
+    totalLessons: "৮০",
     students: "161",
     youWillLearn: [
       "পাইথন ফান্ডামেন্টাল",

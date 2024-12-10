@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AiFillProject } from "react-icons/ai";
 import { HiCursorClick } from "react-icons/hi";
+import { RiBook2Fill } from "react-icons/ri";
 import ShineBorder from "../ui/shine-border";
 
 const CourseCard = ({ course }) => {
@@ -10,7 +12,7 @@ const CourseCard = ({ course }) => {
             color={["#01506e", "#d1638ad4", "#0d0258"]}
             style="border-image-source: linear-gradient(to bottom, #030014, #3b81f5); border-image-slice: 1;"
         >
-            <div className="h-[220px] w-full overflow-hidden">
+            <div className="w-full overflow-hidden">
                 <Image
                     src={course?.thumbnail}
                     alt={course?.title}
@@ -25,17 +27,34 @@ const CourseCard = ({ course }) => {
                 </h3>
             </div>
 
-            <div className="flex items-center justify-between border-t border-white/20 border-dashed p-4">
-                <p className="flex gap-2 items-center line font-bangla">
-                    ৳ {course?.courseFee}
-                </p>
-                <Link
-                    href={`/courses/${course?.slug}`}
-                    className="font-semibold font-bangla bg-blue-600/20 px-5 py-2 rounded-lg inline-flex gap-2 items-center"
-                >
-                    বিস্তারিত{" "}
-                    <HiCursorClick className="text-xl text-blue-500" />
-                </Link>
+            <div className="border-t border-white/20 border-dashed p-4">
+                <div className="flex gap-2 items-center text-gray-300 mb-2">
+                    <p className="text-xs font-semibold flex items-center gap-1">
+                        <RiBook2Fill className="text-sm" />
+                        {course?.totalLessons}+ লেসন্স
+                    </p>
+                    <p className="text-xs font-semibold flex items-center gap-1">
+                        <AiFillProject className="text-sm" />
+                        {course?.totalLessons}+ প্রজেক্ট
+                    </p>
+                </div>
+                <div className="flex items-center justify-between">
+                    <div className="flex gap-1">
+                        <p className="flex gap-2 items-center text-xl font-semibold tracking-wide font-bangla">
+                            ৳ {course?.courseFee}
+                        </p>
+                        <p className="text-sm line-through text-yellowish">
+                            {course?.originalFee}
+                        </p>
+                    </div>
+                    <Link
+                        href={`/courses/${course?.slug}`}
+                        className="font-semibold font-bangla bg-yellowish/75 px-5 py-2 rounded-lg inline-flex gap-2 items-center"
+                    >
+                        বিস্তারিত{" "}
+                        <HiCursorClick className="text-xl text-white" />
+                    </Link>
+                </div>
             </div>
         </ShineBorder>
     );
