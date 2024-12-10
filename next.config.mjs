@@ -1,7 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["avatar.vercel.sh", "avatars.githubusercontent.com"], 
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "**",
+            },
+        ],
+    },
+    experimental: {
+        staleTimes: {
+            dynamic: 30,
+            static: 180,
+        },
     },
 };
 
