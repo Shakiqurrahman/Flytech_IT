@@ -27,7 +27,7 @@ const Hero = () => {
                     <Image
                         src={triangleShape2}
                         alt="hero shape"
-                        className="absolute left-1/2 bottom-10 animate-spin-slow"
+                        className="absolute left-1/2 -bottom-10 md:bottom-10 animate-spin-slow"
                     />
                     <div className="relative  flex flex-col md:flex-row justify-center items-center mt-32 mb-16">
                         <div className=" mb-10 w-full md:w-2/5">
@@ -68,7 +68,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="text-center max-w-[1000px] mx-auto">
-                        <p className=" mb-2">
+                        <p className="text-sm sm:text-base mb-2">
                             Transform your passion into a profession with
                             comprehensive training programs tailored to your
                             goals. Whether you&apos;re learning to code,

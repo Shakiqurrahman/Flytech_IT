@@ -9,11 +9,18 @@ const Contact = () => {
     return (
         <>
             <div className="relative border-b border-gray-700/50">
-                <div className="max-w-[1600px] w-full rounded-full h-[200px] bg-gradient-to-b from-transparent from-0% via-95% to-100% via-blue-800 to-transparent absolute left-1/2 blur-[200px]"></div>
+                <div className="absolute right-10 top-10 hidden md:flex gap-8 blur-sm select-none">
+                    <FaFacebookF className="text-5xl text-white/10 animate-pulse" />
+                    <FaYoutube className="text-5xl text-white/10 animate-pulse mt-5" />
+                    <FaLinkedinIn className="text-5xl text-white/10 animate-pulse mt-10" />
+                </div>
+                <div className="w-full rounded-full h-[200px] bg-gradient-to-b from-transparent from-0% via-95% to-100% via-blue-800 to-transparent absolute left-1/2 blur-[200px]"></div>
                 <div className="max-width">
-                    <div className="pt-[100px] text-center md:text-start">
+                    <div className="pt-[80px] text-center md:text-start">
                         <h1 className="font-semibold text-4xl">Contact Us</h1>
-                        <p className="text-gray-300">We’re Here to Help – Reach Out Anytime.</p>
+                        <p className="text-gray-300">
+                            We’re Here to Help – Reach Out Anytime.
+                        </p>
                         <div className="flex justify-center md:justify-start items-center gap-3 mt-5 mb-[100px] md:mt-[100px] md:mb-5">
                             <Link
                                 href={"https://facebook.com/flytechitbd"}
