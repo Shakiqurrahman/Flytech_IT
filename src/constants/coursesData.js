@@ -72,7 +72,7 @@ export const AllCoursesData = [
     thumbnail: course1,
     courseFee: 8000,
     originalFee: 10000,
-    discount: 25,
+    discount: 20,
     isOffer: true,
     totalProjects : "৫",
     startDate: "8 December, 2024",
@@ -243,11 +243,8 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01896125224 নাম্বারে।</p>
           </div>`,
     thumbnail: course2,
-    courseFee: 8000,
-    originalFee: 10000,
+    courseFee: 12000,
     totalProjects : "৫",
-    discount: 25,
-    isOffer: true,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
     youWillGet: [
@@ -416,10 +413,10 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01896125224 নাম্বারে।</p>
           </div>`,
     thumbnail: course3,
-    courseFee: 8000,
+    courseFee: 7000,
     originalFee: 10000,
     totalProjects : "৫",
-    discount: 25,
+    discount: 30,
     isOffer: true,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
@@ -589,11 +586,9 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01896125224 নাম্বারে।</p>
           </div>`,
     thumbnail: course4,
-    courseFee: 8000,
-    originalFee: 10000,
+    courseFee: 15000,
     totalProjects : "৫",
-    discount: 25,
-    isOffer: true,
+    isOffer: false,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
     youWillGet: [
@@ -762,11 +757,9 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01896125224 নাম্বারে।</p>
           </div>`,
     thumbnail: course5,
-    courseFee: 8000,
-    originalFee: 10000,
+    courseFee: 6500,
     totalProjects : "৫",
-    discount: 25,
-    isOffer: true,
+    isOffer: false,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
     youWillGet: [

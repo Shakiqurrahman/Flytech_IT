@@ -1,3 +1,4 @@
+import offerShape from "@/assets/images/shapes/offer-shape.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillProject } from "react-icons/ai";
@@ -12,13 +13,27 @@ const CourseCard = ({ course }) => {
             color={["#01506e", "#d1638ad4", "#0d0258"]}
             style="border-image-source: linear-gradient(to bottom, #030014, #3b81f5); border-image-slice: 1;"
         >
-            <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden relative">
                 <Image
                     src={course?.thumbnail}
                     alt={course?.title}
                     placeholder="blur"
                     className="w-full h-full object-cover"
                 />
+                {course?.isOffer && (
+                    <div className="absolute top-3 right-3">
+                        <div className="relative">
+                            <Image
+                                src={offerShape}
+                                alt="Course Offer Price"
+                                className="size-[45px] object-contain"
+                            />
+                            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black font-semibold text-sm">
+                                {course?.discount}%
+                            </span>
+                        </div>
+                    </div>
+                )}
             </div>
 
             <div className="flex flex-col flex-grow p-4">
@@ -43,9 +58,11 @@ const CourseCard = ({ course }) => {
                         <p className="flex gap-2 items-center text-[22px] font-semibold tracking-wide font-bangla">
                             ৳ {course?.courseFee}
                         </p>
-                        <p className="text-sm line-through text-yellowish">
-                            {course?.originalFee}
-                        </p>
+                        {course?.isOffer && (
+                            <p className="text-sm line-through text-yellowish">
+                                {course?.originalFee}
+                            </p>
+                        )}
                     </div>
                     <Link
                         href={`/courses/${course?.slug}`}
