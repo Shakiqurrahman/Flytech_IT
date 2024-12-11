@@ -35,12 +35,12 @@ const CourseCard = ({ course }) => {
                     </p>
                     <p className="text-xs font-semibold flex items-center gap-1">
                         <AiFillProject className="text-sm" />
-                        {course?.totalLessons}+ প্রজেক্ট
+                        {course?.totalProjects}+ প্রজেক্ট
                     </p>
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="flex gap-1">
-                        <p className="flex gap-2 items-center text-xl font-semibold tracking-wide font-bangla">
+                        <p className="flex gap-2 items-center text-[22px] font-semibold tracking-wide font-bangla">
                             ৳ {course?.courseFee}
                         </p>
                         <p className="text-sm line-through text-yellowish">
@@ -49,7 +49,7 @@ const CourseCard = ({ course }) => {
                     </div>
                     <Link
                         href={`/courses/${course?.slug}`}
-                        className="font-semibold font-bangla bg-yellowish/75 px-5 py-2 rounded-lg inline-flex gap-2 items-center"
+                        className="font-semibold font-bangla bg-yellowish/85 hover:bg-yellowish/75 duration-300 px-5 py-2 rounded-lg inline-flex gap-2 items-center"
                     >
                         বিস্তারিত{" "}
                         <HiCursorClick className="text-xl text-white" />
