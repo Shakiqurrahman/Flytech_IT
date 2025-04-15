@@ -1,10 +1,10 @@
-import AchivementImage from "@/assets/images/about-us/achivements/achievementsimagetwo.webp";
-import lifeAtFlytechit from "@/assets/images/about-us/lifeatflytechit.webp";
-import ourMissionImage from "@/assets/images/about-us/ourmission.webp";
-import CEO from "@/assets/images/about-us/team-member/CEO.webp";
-import COO from "@/assets/images/about-us/team-member/COO.webp";
-import CTO from "@/assets/images/about-us/team-member/CTO.webp";
 import Image from "next/image";
+import AchivementImage from "/public/images/about-us/achivements/achievementsimagetwo.webp";
+import lifeAtFlytechit from "/public/images/about-us/lifeatflytechit.webp";
+import ourMissionImage from "/public/images/about-us/ourmission.webp";
+import CEO from "/public/images/about-us/team-member/CEO.webp";
+import COO from "/public/images/about-us/team-member/COO.webp";
+import CTO from "/public/images/about-us/team-member/CTO.webp";
 
 const AboutUs = () => {
   return (

@@ -1,10 +1,10 @@
-import course1 from "@/assets/images/courses-thumbnail/course1.jpg";
-import course2 from "@/assets/images/courses-thumbnail/course2.png";
-import course3 from "@/assets/images/courses-thumbnail/course3.jpg";
-import course4 from "@/assets/images/courses-thumbnail/course4.jpg";
-import course5 from "@/assets/images/courses-thumbnail/course5.jpg";
+import course1 from "/public/images/courses-thumbnail/course1.jpg";
+import course2 from "/public/images/courses-thumbnail/course2.png";
+import course3 from "/public/images/courses-thumbnail/course3.jpg";
+import course4 from "/public/images/courses-thumbnail/course4.jpg";
+import course5 from "/public/images/courses-thumbnail/course5.jpg";
 
-import instructorLogo from "@/assets/images/courses-logo/cyber-security.png";
+import instructorLogo from "/public/images/courses-logo/cyber-security.png";
 
 export const AllCoursesData = [
   {
@@ -74,7 +74,7 @@ export const AllCoursesData = [
     originalFee: 10000,
     discount: 20,
     isOffer: true,
-    totalProjects : "৫",
+    totalProjects: "৫",
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
     youWillGet: [
@@ -244,7 +244,7 @@ export const AllCoursesData = [
           </div>`,
     thumbnail: course2,
     courseFee: 12000,
-    totalProjects : "৫",
+    totalProjects: "৫",
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
     youWillGet: [
@@ -415,7 +415,7 @@ export const AllCoursesData = [
     thumbnail: course3,
     courseFee: 7000,
     originalFee: 10000,
-    totalProjects : "৫",
+    totalProjects: "৫",
     discount: 30,
     isOffer: true,
     startDate: "8 December, 2024",
@@ -587,7 +587,7 @@ export const AllCoursesData = [
           </div>`,
     thumbnail: course4,
     courseFee: 15000,
-    totalProjects : "৫",
+    totalProjects: "৫",
     isOffer: false,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",
@@ -758,7 +758,7 @@ export const AllCoursesData = [
           </div>`,
     thumbnail: course5,
     courseFee: 6500,
-    totalProjects : "৫",
+    totalProjects: "৫",
     isOffer: false,
     startDate: "8 December, 2024",
     startTime: "9:00 p.m.",

@@ -1,9 +1,9 @@
-import triangleShape2 from "@/assets/images/shapes/triangle-shape.png";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { HiArrowLongRight } from "react-icons/hi2";
+import triangleShape2 from "/public/images/shapes/triangle-shape.png";
 
 const Contact = () => {
   return (
