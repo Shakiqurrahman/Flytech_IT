@@ -31,9 +31,11 @@ const Courses = async ({ params }) => {
               <div className="flex items-center bg-dark-gradient rounded-lg p-6 justify-around shadow">
                 <div className="text-center">
                   <h1 className="text-blue-400 font-medium text-2xl sm:text-3xl">
-                    {courseData?.students}
+                    {courseData?.duration}
                   </h1>
-                  <p className="text-sm sm:text-lg">Students</p>
+                  <p className="text-sm sm:text-lg">
+                    Month{courseData?.duration > 1 ? "s" : ""}
+                  </p>
                 </div>
                 <div className="text-center">
                   <h1 className="text-blue-400 font-medium text-2xl sm:text-3xl">
