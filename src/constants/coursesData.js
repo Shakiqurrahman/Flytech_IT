@@ -1,12 +1,12 @@
-import course1 from "@/assets/images/courses-thumbnail/course1.webp";
-import course2 from "@/assets/images/courses-thumbnail/course2.webp";
-import course3 from "@/assets/images/courses-thumbnail/course3.webp";
-import course4 from "@/assets/images/courses-thumbnail/course4.webp";
-import course5 from "@/assets/images/courses-thumbnail/course5.webp";
-import course6 from "@/assets/images/courses-thumbnail/course6.webp";
-import course9 from "@/assets/images/courses-thumbnail/course9.webp";
+import course1 from "/public/images/courses-thumbnail/course1.webp";
+import course2 from "/public/images/courses-thumbnail/course2.webp";
+import course3 from "/public/images/courses-thumbnail/course3.webp";
+import course4 from "/public/images/courses-thumbnail/course4.webp";
+import course5 from "/public/images/courses-thumbnail/course5.webp";
+import course6 from "/public/images/courses-thumbnail/course6.webp";
+import course9 from "/public/images/courses-thumbnail/course9.webp";
 
-import instructorLogo from "@/assets/images/courses-logo/cyber-security.png";
+import instructorLogo from "/public/images/courses-logo/cyber-security.png";
 
 export const AllCoursesData = [
   {

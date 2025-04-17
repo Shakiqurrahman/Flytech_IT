@@ -1,17 +1,17 @@
-import laravelLogo from "@/assets/images/courses-logo/Laravel.png";
-// import seoLogo from "@/assets/images/courses-logo/SEO.png";
-// import basicLogo from "@/assets/images/courses-logo/basic-computer-course.png";
-import cyberLogo from "@/assets/images/courses-logo/cyber-security.png";
-// import devOpsLogo from "@/assets/images/courses-logo/devops.png";
-import dJangoLogo from "@/assets/images/courses-logo/django.png";
-// import flutterLogo from "@/assets/images/courses-logo/flutter.png";
-import graphicsLogo from "@/assets/images/courses-logo/graphic-design.png";
-// import mernLogo from "@/assets/images/courses-logo/mern-stack.png";
-import pyhtonLogo from "@/assets/images/courses-logo/python.png";
-import marketingLogo from "@/assets/images/courses-logo/social-media-marketing-service.png";
-// import uiuxLogo from "@/assets/images/courses-logo/ui-ux-design.png";
-// import wordpressLogo from "@/assets/images/courses-logo/wordpress.png";
-import webDesignLogo from "@/assets/images/courses-logo/web-design.png";
+import laravelLogo from "/public/images/courses-logo/Laravel.png";
+// import seoLogo from "/public/images/courses-logo/SEO.png";
+// import basicLogo from "/public/images/courses-logo/basic-computer-course.png";
+import cyberLogo from "/public/images/courses-logo/cyber-security.png";
+// import devOpsLogo from "/public/images/courses-logo/devops.png";
+import dJangoLogo from "/public/images/courses-logo/django.png";
+// import flutterLogo from "/public/images/courses-logo/flutter.png";
+import graphicsLogo from "/public/images/courses-logo/graphic-design.png";
+// import mernLogo from "/public/images/courses-logo/mern-stack.png";
+import pyhtonLogo from "/public/images/courses-logo/python.png";
+import marketingLogo from "/public/images/courses-logo/social-media-marketing-service.png";
+// import uiuxLogo from "/public/images/courses-logo/ui-ux-design.png";
+// import wordpressLogo from "/public/images/courses-logo/wordpress.png";
+import webDesignLogo from "/public/images/courses-logo/web-design.png";
 
 export const coursesNavLink = [
   {

@@ -1,6 +1,6 @@
-import CEO from "@/assets/images/about-us/team-member/Flytech-IT-CEO-Mokbul-Hussain.jpg";
-import DeveloperShakil from "@/assets/images/about-us/team-member/Flytech-IT-Developer-Shakil.png";
-import DeveloperMahdi from "@/assets/images/about-us/team-member/Flytech-IT-MERN-DEVELOPER.jpeg";
+import CEO from "/public/images/about-us/team-member/Flytech-IT-CEO-Mokbul-Hussain.jpg";
+import DeveloperShakil from "/public/images/about-us/team-member/Flytech-IT-Developer-Shakil.png";
+import DeveloperMahdi from "/public/images/about-us/team-member/Flytech-IT-MERN-DEVELOPER.jpeg";
 
 export const teamsData = [
   {

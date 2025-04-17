@@ -1,10 +1,10 @@
-import offerShape from "@/assets/images/shapes/offer-shape.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillProject } from "react-icons/ai";
 import { HiCursorClick } from "react-icons/hi";
 import { RiBook2Fill } from "react-icons/ri";
 import ShineBorder from "../ui/shine-border";
+import offerShape from "/public/images/shapes/offer-shape.png";
 
 const CourseCard = ({ course }) => {
   return (

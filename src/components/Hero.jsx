@@ -1,11 +1,11 @@
-import triangleShape from "@/assets/images/shapes/hero-triangle.png";
-import triangleShape2 from "@/assets/images/shapes/triangle-shape.png";
 import { avatars } from "@/constants/avatarsData";
 import Image from "next/image";
 import AnimatedHero from "./AnimatedHero";
 import AvatarCircles from "./ui/avatar-circles";
 import NumberTicker from "./ui/number-ticker";
 import Particles from "./ui/particles";
+import triangleShape from "/public/images/shapes/hero-triangle.png";
+import triangleShape2 from "/public/images/shapes/triangle-shape.png";
 
 const Hero = () => {
   return (

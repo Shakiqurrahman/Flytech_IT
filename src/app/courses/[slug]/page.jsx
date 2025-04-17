@@ -1,4 +1,3 @@
-import offerShape from "@/assets/images/shapes/offer-shape.png";
 import { AllCoursesData } from "@/constants/coursesData";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -7,6 +6,7 @@ import { TbCalendarMonth, TbCurrencyTaka } from "react-icons/tb";
 import CourseFAQ from "../../../components/courses/CourseFAQ";
 import Instructors from "../../../components/courses/Instructors";
 import Multitabs from "../../../components/courses/Multitabs";
+import offerShape from "/public/images/shapes/offer-shape.png";
 
 const Courses = async ({ params }) => {
   const slug = (await params).slug;

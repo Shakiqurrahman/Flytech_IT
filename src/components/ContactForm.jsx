@@ -1,7 +1,7 @@
 "use client";
 
-import formBg from "@/assets/images/smoke.jpg";
 import { useState } from "react";
+import formBg from "/public/images/smoke.jpg";
 
 const ContactForm = () => {
   const [form, setForm] = useState({

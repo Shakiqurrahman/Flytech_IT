@@ -1,8 +1,8 @@
-import AchivementImage from "@/assets/images/about-us/achivements/achivement.jpg";
-import lifeAtFlytechit from "@/assets/images/about-us/lifeatflytechit.jpeg";
-import ourMissionImage from "@/assets/images/about-us/ourmission.jpg";
 import { teamsData } from "@/constants/teamsData";
 import Image from "next/image";
+import AchivementImage from "/public/images/about-us/achivements/achivement.jpg";
+import lifeAtFlytechit from "/public/images/about-us/lifeatflytechit.jpeg";
+import ourMissionImage from "/public/images/about-us/ourmission.jpg";
 
 const AboutUs = () => {
   const teamMembers = [...teamsData];
