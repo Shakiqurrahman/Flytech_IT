@@ -81,14 +81,6 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li>
-              <Link
-                href="/services"
-                className="px-3 py-2 rounded-md hover:bg-white/10 duration-300 block"
-              >
-                Services
-              </Link>
-            </li>
             <li
               className=""
               onMouseEnter={() => handleMouseToggle(true)}
@@ -121,14 +113,6 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-            </li>
-            <li>
-              <Link
-                href="/portfolio"
-                className="px-3 py-2 rounded-md hover:bg-white/10 duration-300 block"
-              >
-                Portfolio
-              </Link>
             </li>
             <li>
               <Link
@@ -194,9 +178,6 @@ const Header = () => {
           <li onClick={handleClose}>
             <Link href="/about-us">About</Link>
           </li>
-          <li onClick={handleClose}>
-            <Link href="/services">Services</Link>
-          </li>
           <li onClick={handleClick}>
             <span className="flex items-center gap-2 cursor-pointer">
               Courses{" "}
@@ -239,9 +220,6 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-          </li>
-          <li onClick={handleClose}>
-            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li onClick={handleClose}>
             <Link href="/contact">Contact</Link>

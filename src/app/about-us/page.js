@@ -1,12 +1,11 @@
-import AchivementImage from "@/assets/images/about-us/achivements/achievementsimagetwo.webp";
-import lifeAtFlytechit from "@/assets/images/about-us/lifeatflytechit.webp";
-import ourMissionImage from "@/assets/images/about-us/ourmission.webp";
-import CEO from "@/assets/images/about-us/team-member/CEO.webp";
-import COO from "@/assets/images/about-us/team-member/COO.webp";
-import CTO from "@/assets/images/about-us/team-member/CTO.webp";
+import AchivementImage from "@/assets/images/about-us/achivements/achivement.jpg";
+import lifeAtFlytechit from "@/assets/images/about-us/lifeatflytechit.jpeg";
+import ourMissionImage from "@/assets/images/about-us/ourmission.jpg";
+import { teamsData } from "@/constants/teamsData";
 import Image from "next/image";
 
 const AboutUs = () => {
+  const teamMembers = [...teamsData];
   return (
     <>
       <div className="w-full py-[100px] bg-gradient-to-br from-transparent from-0% via-100% to-100% via-blue-800 to-transparent">
@@ -31,15 +30,25 @@ const AboutUs = () => {
               Our Mission
             </h1>
             <p className="sm:text-lg">
-              Our mission is to help 1 million people secure jobs by 2030. We
-              are dedicated to empowering individuals with the knowledge and
-              expertise needed to thrive in the dynamic job market. Through our
-              Career Path programs, Courses for skill development and Master
-              classes, we aim to not only enhance technical skills but also
-              foster critical thinking, creativity, and adaptability. By doing
-              so, we are committed to creating a pool of highly skilled and
-              employable individuals who can confidently contribute to the
-              ever-evolving demands of the professional landscape.
+              Our mission is to empower individuals and organizations through
+              high-quality, industry-relevant software training. We are
+              committed to bridging the gap between theoretical knowledge and
+              practical application by offering hands-on learning experiences
+              that foster real-world skills. Our goal is to cultivate a new
+              generation of tech professionals who are not only proficient in
+              current technologies but also adaptable to the ever-evolving
+              digital landscape. Whether you’re a student, job-seeker, working
+              professional, or corporate team, we strive to provide personalized
+              learning paths, expert mentorship, and innovative teaching
+              methodologies tailored to diverse learning needs. By staying
+              aligned with industry trends and partnering with experts, we
+              ensure our learners gain the most in-demand skills—from
+              programming and web development to data science, AI, and cloud
+              technologies. We believe education should be accessible,
+              practical, and transformative. Through our training programs, we
+              aim to unlock potential, boost confidence, and support career
+              advancement—ultimately contributing to a more skilled,
+              future-ready workforce.
             </p>
           </div>
           <div className="w-full sm:w-[40%]">
@@ -64,69 +73,39 @@ const AboutUs = () => {
               Life at Flytech IT
             </h1>
             <p className="sm:text-lg">
-              At Interactive Cares, life revolves around team collaboration, a
-              friendly work culture, and a balanced work-and-chill environment.
-              We&apos;re committed to creating a space where innovation thrives,
-              ideas are welcomed, and well-being is paramount, ensuring every
-              team member feels valued and inspired.
+              At Flytech IT, we foster a vibrant, inclusive, and
+              innovation-driven environment where learning never stops. Our team
+              thrives on collaboration, creativity, and continuous growth. From
+              hands-on training sessions to real-time project exposure, we
+              ensure every individual feels empowered and valued. We celebrate
+              achievements, encourage fresh ideas, and promote a healthy
+              work-life balance. Whether you&apos;re a trainer, learner, or team
+              member, Flytech IT is a place to grow, connect, and make a real
+              impact in the tech world. Here, every day is a step forward in
+              building brighter careers and stronger communities.
             </p>
           </div>
         </div>
-        {/* OUR FOUNDING TEAM section */}
+        {/* OUR TEAM section */}
         <div>
           <h1 className="text-center text-2xl sm:text-[30px] mb-10">
-            OUR FOUNDING TEAM
+            OUR TEAM
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <div className="text-center">
-              <Image
-                src={CEO}
-                alt="Team Member"
-                className="shrink-0 size-[200px] lg:size-[300px] block mx-auto object-cover object-top rounded-full border-4 border-orange-500"
-              />
-              <h1 className="text-xl font-medium mt-5">Rare Al Samir</h1>
-              <h2 className="text-orange-500 text-lg font-semibold">
-                Founder & CEO
-              </h2>
-              <p className="mt-2">
-                Ex-Bangladesh Army, 3 years of Offline Education Business
-                Experience, 5 years of Teaching Experience Finance Graduate
-              </p>
-            </div>
-            <div className="text-center">
-              <Image
-                src={COO}
-                alt="Team Member"
-                className="shrink-0 size-[200px] lg:size-[300px] block mx-auto object-cover object-top rounded-full border-4 border-orange-500"
-              />
-              <h1 className="text-xl font-medium mt-5">
-                Jamila Bupasha Khushbu
-              </h1>
-              <h2 className="text-orange-500 text-lg font-semibold">
-                Co-Founder & COO
-              </h2>
-              <p className="mt-2">
-                Economics Post Graduate, Ex-BYLC Graduate, 6 years of Experience
-                in Education Sector, Mentored 5000+ students at s@ifurs & two
-                other educational institution, Lead an NGO for 4 years as an
-                Operation Lead
-              </p>
-            </div>
-            <div className="text-center">
-              <Image
-                src={CTO}
-                alt="Team Member"
-                className="shrink-0 size-[200px] lg:size-[300px] block mx-auto object-cover object-top rounded-full border-4 border-orange-500"
-              />
-              <h1 className="text-xl font-medium mt-5">
-                Tanveer Hossain Munim
-              </h1>
-              <h2 className="text-orange-500 text-lg font-semibold">CTO</h2>
-              <p className="mt-2">
-                Software Engineer, 5 years of Teaching Experience to 50,000+
-                Students
-              </p>
-            </div>
+            {teamMembers.map((member, i) => (
+              <div key={i} className="text-center">
+                <Image
+                  src={member.image}
+                  alt="Team Member"
+                  className="shrink-0 size-[200px] lg:size-[300px] block mx-auto object-cover object-top rounded-full border-4 border-orange-500"
+                />
+                <h1 className="text-xl font-medium mt-5">{member.name}</h1>
+                <h2 className="text-orange-500 text-lg font-semibold">
+                  {member.title}
+                </h2>
+                <p className="mt-2">{member.bio}</p>
+              </div>
+            ))}
           </div>
         </div>
         {/* Our Achievements section */}
@@ -134,23 +113,32 @@ const AboutUs = () => {
           <h1 className="text-center text-2xl sm:text-[30px] mb-10">
             Some of our Achievements
           </h1>
-          <div className="flex flex-wrap sm:flex-nowrap items-center gap-5 sm:gap-10">
+          <div className="flex flex-wrap md:flex-nowrap items-center gap-5 sm:gap-10">
             <Image
               src={AchivementImage}
               alt="Achivement Image"
-              className="w-full sm:w-1/2 md:w-[60%] object-cover max-h-[400px] sm:max-h-[300px] rounded-lg"
+              className="w-full md:w-1/2 lg:w-[60%] object-cover max-h-[400px] rounded-lg"
             />
-            <div className="w-full sm:w-1/2 md:w-[40%]">
+            <div className="w-full md:w-1/2 lg:w-[40%]">
               <h1 className="text-lg sm:text-2xl font-medium mb-3">
-                Accelerating Asia Cohort-9
+                Flytech IT – CSE Industrial Training Achievement
               </h1>
               <p>
-                Interactive Cares clinched a $100K investment from Accelerating
-                Asia, with up to $250K follow-on funding for its $1.5M Seed
-                Round. With 100,000+ paid users and 20% MoM growth, it&apos;s
-                secured seed investments from global markets including Hong Kong
-                and Silicon Valley. As the only Bangladeshi firm in Accelerating
-                Asia Cohort-9, it previously raised $350K in pre-seed funding.
+                At Flytech IT, our CSE Industrial Training program has
+                successfully empowered hundreds of Computer Science students
+                with hands-on industry experience. Over the course of our
+                training sessions, participants have worked on real-world
+                projects in web development, app development, cybersecurity,
+                networking, and graphic design. Our structured modules, expert
+                mentorship, and practical labs ensure students gain both
+                technical skills and industry insights. We take pride in
+                bridging the gap between academic knowledge and professional
+                application. Many of our trainees have gone on to secure top
+                positions in reputed IT firms and startups or started successful
+                freelance careers. Our commitment to quality training,
+                up-to-date curriculum, and personal guidance has made Flytech IT
+                a trusted name in industrial training for CSE students across
+                the country.
               </p>
             </div>
           </div>

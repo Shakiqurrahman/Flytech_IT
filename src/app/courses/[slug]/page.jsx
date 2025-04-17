@@ -94,17 +94,19 @@ const Courses = async ({ params }) => {
               </div>
               <div className="border border-blue-400 bg-[#141c2c] rounded-lg p-5 mt-2 block md:hidden">
                 <h1 className="text-center font-semibold text-xl mb-3">
-                  Starting Date and Time
+                  Starting Date {courseData?.startTime && "and Time"}
                 </h1>
                 <div className="flex items-center gap-4 justify-center">
                   <p className="flex items-center gap-1 text-base sm:text-lg">
                     <TbCalendarMonth className="text-xl sm:text-2xl text-blue-400" />
                     <span>{courseData?.startDate}</span>
                   </p>
-                  <p className="flex items-center gap-1 text-base sm:text-lg">
-                    <MdOutlineSchedule className="text-xl sm:text-2xl text-blue-400" />
-                    <span>{courseData?.startTime}</span>
-                  </p>
+                  {courseData?.startTime && (
+                    <p className="flex items-center gap-1 text-base sm:text-lg">
+                      <MdOutlineSchedule className="text-xl sm:text-2xl text-blue-400" />
+                      <span>{courseData?.startTime}</span>
+                    </p>
+                  )}
                 </div>
               </div>
               <Multitabs
@@ -161,17 +163,19 @@ const Courses = async ({ params }) => {
             </div>
             <div className="border border-blue-400 bg-linear-fade rounded-lg p-5 mt-3">
               <h1 className="text-center font-semibold text-xl mb-3">
-                Starting Date and Time
+                Starting Date {courseData?.startTime && "and Time"}
               </h1>
               <div className="flex items-center gap-4 justify-center">
-                <p className="flex items-center gap-1 text-lg">
-                  <TbCalendarMonth className="text-2xl text-blue-400" />
+                <p className="flex items-center gap-1 text-base sm:text-lg">
+                  <TbCalendarMonth className="text-xl sm:text-2xl text-blue-400" />
                   <span>{courseData?.startDate}</span>
                 </p>
-                <p className="flex items-center gap-1 text-lg">
-                  <MdOutlineSchedule className="text-2xl text-blue-400" />
-                  <span>{courseData?.startTime}</span>
-                </p>
+                {courseData?.startTime && (
+                  <p className="flex items-center gap-1 text-base sm:text-lg">
+                    <MdOutlineSchedule className="text-xl sm:text-2xl text-blue-400" />
+                    <span>{courseData?.startTime}</span>
+                  </p>
+                )}
               </div>
             </div>
           </div>
