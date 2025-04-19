@@ -8,7 +8,7 @@ export const teamsData = [
     image: CEO,
     name: "Mokbul Hussain",
     title: "Founder & Software Engineer",
-    bio: "Ex-Bangladesh Army, 3 years of Offline Education Business Experience, 5 years of Teaching Experience Finance Graduate",
+    bio: "B.s.c(EEE) At Metropoliton University. 6 Years Experience on software development.",
   },
   {
     id: 2,
