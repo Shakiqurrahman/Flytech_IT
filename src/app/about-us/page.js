@@ -22,7 +22,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="max-width">
+      <div className="max-width mt-16">
         {/* Our Mission section */}
         <div className="flex flex-wrap-reverse sm:flex-nowrap gap-5 sm:gap-10 items-center mt-10">
           <div className="w-full text-center sm:text-left sm:w-[60%]">
@@ -30,37 +30,28 @@ const AboutUs = () => {
               Our Mission
             </h1>
             <p className="sm:text-lg">
-              Our mission is to empower individuals and organizations through
-              high-quality, industry-relevant software training. We are
-              committed to bridging the gap between theoretical knowledge and
-              practical application by offering hands-on learning experiences
-              that foster real-world skills. Our goal is to cultivate a new
-              generation of tech professionals who are not only proficient in
-              current technologies but also adaptable to the ever-evolving
-              digital landscape. Whether you’re a student, job-seeker, working
-              professional, or corporate team, we strive to provide personalized
-              learning paths, expert mentorship, and innovative teaching
-              methodologies tailored to diverse learning needs. By staying
-              aligned with industry trends and partnering with experts, we
-              ensure our learners gain the most in-demand skills—from
-              programming and web development to data science, AI, and cloud
-              technologies. We believe education should be accessible,
-              practical, and transformative. Through our training programs, we
-              aim to unlock potential, boost confidence, and support career
-              advancement—ultimately contributing to a more skilled,
-              future-ready workforce.
+              Our mission is to empower individuals and organizations with
+              practical, industry-relevant software training. We offer hands-on
+              learning in Programming, Web Development, Data science, Graphics
+              Design, UI/UX design, and basic computer skills. Whether
+              you&apos;re a student, job-seeker, working professional, or
+              corporate team, we provide personalized learning paths, expert
+              mentorship, and innovative teaching methods. Our goal is to bridge
+              the gap between theory and practice, making education accessible,
+              practical, and transformative for career advancement.
             </p>
           </div>
           <div className="w-full sm:w-[40%]">
             <Image
               src={ourMissionImage}
               alt="Our Mission"
-              className="w-full object-cover object-top rounded-lg"
+              // className="w-full object-cover object-top rounded-lg"
+              className="w-full object-cover object-center rounded-lg max-h-[400px]"
             />
           </div>
         </div>
         {/* Life at Flytech IT section */}
-        <div className="flex flex-wrap sm:flex-nowrap gap-5 sm:gap-10 items-center my-20">
+        <div className="flex flex-wrap sm:flex-nowrap gap-5 sm:gap-10 items-center mt-40 mb-32">
           <div className="w-full sm:w-[40%]">
             <Image
               src={lifeAtFlytechit}
@@ -109,7 +100,7 @@ const AboutUs = () => {
           </div>
         </div>
         {/* Our Achievements section */}
-        <div className="mt-20 mb-10">
+        <div className="mt-20 mb-28">
           <h1 className="text-center text-2xl sm:text-[30px] mb-10">
             Some of our Achievements
           </h1>

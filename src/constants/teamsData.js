@@ -8,6 +8,7 @@ import HrDirector from "/public/images/about-us/team-member/Flytech-IT-HR-Direct
 import DeveloperMahdi from "/public/images/about-us/team-member/Flytech-IT-MERN-DEVELOPER.jpeg";
 import UiUxDesigner from "/public/images/about-us/team-member/Flytech-IT-Ui-Ux-Designer.jpeg";
 import WebDesigner from "/public/images/about-us/team-member/Flytech-IT-Web-Designer.jpeg";
+import shakiqur from "/public/images/about-us/team-member/shakiqur-web-application developer.webp";
 
 export const teamsData = [
   {
@@ -26,10 +27,10 @@ export const teamsData = [
   },
   {
     id: 3,
-    image: DeveloperMahdi,
+    image: shakiqur,
     name: "Shakiqur Rahman",
-    title: "MERN Stack Developer",
-    bio: "I'm passionate about creating efficient and scalable solutions, and always eager to learn new technologies.",
+    title: "Software Developer",
+    bio: "Diploma in CSE from SPI, with 3 years of experience in web and app development using SQL/NoSQL.",
   },
   {
     id: 4,
