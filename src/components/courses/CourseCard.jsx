@@ -46,10 +46,12 @@ const CourseCard = ({ course }) => {
             <RiBook2Fill className="text-sm" />
             {course?.totalLessons} লেসন্স
           </p>
-          <p className="text-xs font-semibold flex items-center gap-1">
-            <AiFillProject className="text-sm" />
-            {course?.totalProjects}+ প্রজেক্ট
-          </p>
+          {course?.totalProjects && (
+            <p className="text-xs font-semibold flex items-center gap-1">
+              <AiFillProject className="text-sm" />
+              {course?.totalProjects}+ প্রজেক্ট
+            </p>
+          )}
         </div>
         <div className="flex items-center justify-between">
           <div className="flex gap-1">

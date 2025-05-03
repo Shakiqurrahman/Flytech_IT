@@ -1,10 +1,10 @@
 import laravelLogo from "/public/images/courses-logo/Laravel.png";
 // import seoLogo from "/public/images/courses-logo/SEO.png";
-// import basicLogo from "/public/images/courses-logo/basic-computer-course.png";
+import basicLogo from "/public/images/courses-logo/basic-computer-course.png";
 import cyberLogo from "/public/images/courses-logo/cyber-security.png";
 // import devOpsLogo from "/public/images/courses-logo/devops.png";
 import dJangoLogo from "/public/images/courses-logo/django.png";
-// import flutterLogo from "/public/images/courses-logo/flutter.png";
+import flutterLogo from "/public/images/courses-logo/flutter.png";
 import graphicsLogo from "/public/images/courses-logo/graphic-design.png";
 // import mernLogo from "/public/images/courses-logo/mern-stack.png";
 import pyhtonLogo from "/public/images/courses-logo/python.png";
@@ -44,21 +44,21 @@ export const coursesNavLink = [
   //     link: "",
   //     logo: devOpsLogo,
   //   },
-  //   {
-  //     name: "Flutter Mobile Apps Development",
-  //     link: "",
-  //     logo: flutterLogo,
-  //   },
+  {
+    name: "Flutter Mobile Apps Development",
+    link: "/courses/flutter-mobile-apps-development",
+    logo: flutterLogo,
+  },
   {
     name: "Graphics Design",
     link: "/courses/advanced-graphics-design",
     logo: graphicsLogo,
   },
-  //   {
-  //     name: "Basic Computer & Office Job, Data Entry",
-  //     link: "",
-  //     logo: basicLogo,
-  //   },
+  {
+    name: "Basic Computer & Office Job, Data Entry",
+    link: "/courses/basic-computer-and-office-management",
+    logo: basicLogo,
+  },
   {
     name: "Digital Marketing",
     link: "/courses/advanced-digital-marketing",

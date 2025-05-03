@@ -1,9 +1,11 @@
 import course1 from "/public/images/courses-thumbnail/course1.webp";
+import course10 from "/public/images/courses-thumbnail/course10.webp";
 import course2 from "/public/images/courses-thumbnail/course2.webp";
 import course3 from "/public/images/courses-thumbnail/course3.webp";
 import course4 from "/public/images/courses-thumbnail/course4.webp";
 import course5 from "/public/images/courses-thumbnail/course5.webp";
 import course6 from "/public/images/courses-thumbnail/course6.webp";
+import course8 from "/public/images/courses-thumbnail/course8.webp";
 import course9 from "/public/images/courses-thumbnail/course9.webp";
 
 import instructorLogo from "/public/images/courses-logo/cyber-security.png";
@@ -70,10 +72,10 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course5,
-    courseFee: 5500,
-    // originalFee: 10000,
-    // discount: 20,
-    // isOffer: true,
+    courseFee: 3000,
+    originalFee: 6000,
+    discount: 50,
+    isOffer: true,
     totalProjects: "১০",
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
@@ -271,7 +273,10 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course4,
-    courseFee: 7500,
+    courseFee: 4500,
+    originalFee: 9000,
+    discount: 50,
+    isOffer: true,
     totalProjects: "৫",
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
@@ -524,11 +529,11 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course1,
-    courseFee: 8500,
-    // originalFee: 10000,
+    courseFee: 5000,
+    originalFee: 10000,
     totalProjects: "৫",
-    // discount: 30,
-    // isOffer: true,
+    discount: 50,
+    isOffer: true,
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
     youWillGet: [
@@ -793,9 +798,11 @@ export const AllCoursesData = [
             <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course9,
-    courseFee: 8500,
+    courseFee: 5000,
+    originalFee: 10000,
+    discount: 50,
     totalProjects: "৫",
-    isOffer: false,
+    isOffer: true,
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
     youWillGet: [
@@ -1026,9 +1033,11 @@ export const AllCoursesData = [
               <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course6,
-    courseFee: 10500,
+    courseFee: 7000,
+    originalFee: 14000,
+    discount: 50,
     totalProjects: "৫",
-    isOffer: false,
+    isOffer: true,
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
     youWillGet: [
@@ -1167,9 +1176,11 @@ export const AllCoursesData = [
               <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course3,
-    courseFee: 8500,
+    courseFee: 5000,
+    originalFee: 10000,
+    discount: 50,
     totalProjects: "১০",
-    isOffer: false,
+    isOffer: true,
     startDate: "23 April, 2025",
     // startTime: "9:00 p.m.",
     youWillGet: [
@@ -1339,9 +1350,11 @@ export const AllCoursesData = [
               <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
           </div>`,
     thumbnail: course2,
-    courseFee: 9500,
+    courseFee: 6000,
+    originalFee: 12000,
+    discount: 50,
     totalProjects: "১০",
-    isOffer: false,
+    isOffer: true,
     startDate: "5 May, 2025",
     // startTime: "9:00 p.m.",
     youWillGet: [
@@ -1412,6 +1425,384 @@ export const AllCoursesData = [
         image: instructorLogo,
         title: "Lead Instructor",
         shortBio: "Graphics Designer",
+      },
+    ],
+    courseFAQ: [
+      {
+        id: 1,
+        question: "How do I enroll in a course?",
+        answer:
+          "To enroll in a course, simply visit our office, select the course you’re interested in, and fill out an enrollment form. Our staff will assist you through the registration process and provide all the necessary details.",
+      },
+      {
+        id: 2,
+        question: "Will I get a certificate after completing a course?",
+        answer:
+          "Yes, upon successfully completing the course and meeting the required assessments, you will receive a certificate of completion. This certificate is recognized by industry professionals.",
+      },
+      {
+        id: 3,
+        question: "Is there a discount for enrolling in multiple courses?",
+        answer:
+          "Yes! We offer discounts if you enroll in multiple courses at once. Contact our office for details on available packages and discounts.",
+      },
+      {
+        id: 4,
+        question: "What are the class timings?",
+        answer: "Class timings vary by course. Generally, we offer:",
+        answerBulletPoints: [
+          {
+            bulletHeading: "Morning Sessions",
+            bulletBody: " 9:00 AM to 12:00 PM.",
+          },
+          {
+            bulletHeading: "Afternoon Sessions",
+            bulletBody: " 1:00 PM to 4:00 PM.",
+          },
+          {
+            bulletHeading: "Evening Sessions",
+            bulletBody:
+              " 5:00 PM to 8:00 PM. For specific timings, please check with our team at the time of enrollment.",
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: "How can I contact you for more information?",
+        answer: "For further queries, you can:",
+        answerBulletPoints: [
+          {
+            bulletBody: "Visit our office during working hours.",
+          },
+          {
+            bulletBody: "Call us at +88 01326-314022",
+          },
+          {
+            bulletBody: "Email us at info.flytechit@gmail.com",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Basic Computer & Office Management",
+    slug: "basic-computer-and-office-management",
+    description: `<div>
+    <h1 style="font-weight: 600;">🎯 ১. ভিজ্যুয়াল কমিউনিকেশনের যুগে দক্ষতা হিসেবে অপরিহার্য</h1>
+            <p style="margin-bottom: 12px;">
+              আজকাল সব কিছুই ভিজ্যুয়াল—ফেসবুক পোস্ট, ইউটিউব থাম্বনেইল, ওয়েবসাইট ডিজাইন, অ্যাপ, ব্র্যান্ডিং—সব জায়গায় ডিজাইনের ছোঁয়া দরকার।
+            </p>
+            <p style="margin-bottom: 12px;">
+              👉 গ্রাফিক ডিজাইন শিখলে তুমি এই আধুনিক ভাষায় কথা বলতে পারো।
+            </p>
+    <h1 style="font-weight: 600;">💼 ২. চাকরি ও ফ্রিল্যান্সিং—দুই জায়গাতেই চাহিদা বিশাল</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              দেশ-বিদেশে প্রচুর কোম্পানি গ্রাফিক ডিজাইনার খোঁজে।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              Freelancing মার্কেটপ্লেসে (Fiverr, Upwork) ডিজাইনারদের ডিমান্ড সবসময় বেশি।
+            </p>
+            <p style="margin-bottom: 12px;">
+              👉 কোর্স করলে এই মার্কেটের জন্য প্রয়োজনীয় স্কিল তৈরি হয়।
+            </p>
+            <h1 style="font-weight: 600;">💰 ৩. ইনকামের সুযোগ বাড়ে</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            কোর্স শেষে চাইলে চাকরি করতে পারো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            চাইলে পার্টটাইম বা ফুলটাইম ফ্রিল্যান্সিং করতে পারো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            এমনকি নিজের ডিজাইন বেচেও আয় করা যায় (Creative Market, Etsy, Gumroad ইত্যাদিতে)।</p>
+            <h1 style="font-weight: 600;">🧠 ৪. সৃজনশীলতা (Creativity) কাজে লাগাতে পারো</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              যারা ক্রিয়েটিভ কাজ পছন্দ করে, তাদের জন্য এটা একদম পারফেক্ট।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              তুমি তোমার আইডিয়াকে ভিজ্যুয়াল রূপ দিতে পারো, যা অনেক তৃপ্তিদায়ক।
+            </p>
+            <h1 style="font-weight: 600;">🚀 ৫. ব্যক্তিগত ব্র্যান্ডিং ও বিজনেসেও কাজে লাগে</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              তুমি যদি নিজের ব্র্যান্ড বা ছোট বিজনেস শুরু করো, তাহলে লোগো, পোস্ট, ব্রোশিওর, প্যাকেজ ডিজাইন—সব নিজেই করতে পারবে।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              আর ডিজাইনে ভালো হলে সোশ্যাল মিডিয়াতে সহজেই প্রফেশনাল প্রেজেন্স তৈরি হয়।
+            </p>
+            <h1 style="font-weight: 600;">🌐 ৬. ডিজিটাল দুনিয়ার সাথে আপডেট থাকার উপায়</h1>
+            <p style="margin-bottom: 12px;">
+              গ্রাফিক ডিজাইন শেখার মাধ্যমে তুমি:
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              Adobe Photoshop, Illustrator, Canva, Figma-এর মতো জনপ্রিয় টুলস শিখে ফেলো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              ডিজিটাল জগতে নিজেকে আরো প্রফেশনালভাবে উপস্থাপন করতে পারো।
+            </p>
+              <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
+          </div>`,
+    thumbnail: course10,
+    courseFee: 2000,
+    originalFee: 4000,
+    discount: 50,
+    // totalProjects: "১০",
+    isOffer: true,
+    startDate: "5 May, 2025",
+    // startTime: "9:00 p.m.",
+    youWillGet: [
+      "অফলাইন",
+      "ক্লাস মেয়াদ ৩ মাস",
+      "সপ্তাহে ৩ দিন ক্লাস",
+      "৪০ + ক্লাস",
+      "২ ঘণ্টা ক্লাস টাইম",
+      "বেসিক টু এডভান্স লেভেল",
+    ],
+    hoursOfLessons: "৮০+",
+    totalLessons: "৪০+",
+    duration: 3,
+    youWillLearn: [
+      "Introduction of Technology &  Basic Computer",
+      "Computer Fundamentals and System Components",
+      "Computer Screen, Folder, File Fundamentals",
+      "Computer Settings, Tools",
+      "Computer Internet, Network, Browser",
+      "Microsoft Office, Word",
+      "Microsoft Office, Excel",
+      "Microsoft Office, Powerpoint",
+      "Typing , Bijoy, Avro",
+      "Google Service For Job Market",
+      "Meeting, Video, Chat,Remote, Projector Tools",
+      "Artificial Intelligence (AI) Tools",
+      "Data Entry, Marketing, Graphics , Website",
+      "Computer Hardware,Windows Setup",
+    ],
+    community: [
+      {
+        title: "Flytech IT Support Group",
+        linkTitle: "Join The Group",
+        link: "https://www.facebook.com/groups/flytechitsupportgroup",
+      },
+      {
+        title: "Flytech IT Official Group",
+        linkTitle: "Join The Group",
+        link: "https://www.facebook.com/groups/flytechitcommunity",
+      },
+    ],
+    forWhom: [
+      "সৃজনশীল (Creative) মাইন্ডসেট যাদের আছে",
+      "যারা আঁকতে, ডিজাইন করতে বা রঙ ও ফর্ম নিয়ে কাজ করতে পছন্দ করে।",
+      "যারা ভিজ্যুয়াল আর্ট, লে-আউট, টাইপোগ্রাফি বা কম্পোজিশন নিয়ে আগ্রহী।",
+      "যারা ফাইন আর্টস, মিডিয়া, মার্কেটিং বা আইটি-র মতো বিষয়ে পড়ছে বা ক্যারিয়ার গড়তে চায়।",
+      "SSC/HSC পাশ করে স্কিল ডেভেলপ করতে চায়।",
+      "যারা Fiverr, Upwork, Freelancer.com-এর মতো প্ল্যাটফর্মে কাজ করে ইনকাম করতে চায়।",
+      "লোগো ডিজাইন, ব্যানার, সোশ্যাল মিডিয়া পোস্ট, ব্রোশিওর ডিজাইন ইত্যাদি করতে চায়।",
+      "যারা নিজের ব্র্যান্ড বা অন্যের ব্র্যান্ডের মার্কেটিং কনটেন্ট তৈরি করতে চায়।",
+      "ডিজাইন করতে পারলে আর আলাদা ডিজাইনার খোঁজার দরকার হয় না।",
+      "যারা নিজেই UI/UX ডিজাইন শিখে, ওয়েবসাইট বা অ্যাপের ডিজাইন করতে চায়।",
+      "যারা নিজের ব্র্যান্ডিং, লোগো, প্যাকেজ ডিজাইন, বা প্রমোশনাল ম্যাটেরিয়াল নিজে বানাতে চায়।",
+    ],
+    instructors: [
+      {
+        name: "Mokbul Hussain",
+        image: instructorLogo,
+        title: "Lead Instructor",
+        shortBio: "Software Engineer",
+      },
+      {
+        name: "Atikur Rahman",
+        image: instructorLogo,
+        title: "Support Instructor",
+        shortBio: "Computer Operator",
+      },
+    ],
+    courseFAQ: [
+      {
+        id: 1,
+        question: "How do I enroll in a course?",
+        answer:
+          "To enroll in a course, simply visit our office, select the course you’re interested in, and fill out an enrollment form. Our staff will assist you through the registration process and provide all the necessary details.",
+      },
+      {
+        id: 2,
+        question: "Will I get a certificate after completing a course?",
+        answer:
+          "Yes, upon successfully completing the course and meeting the required assessments, you will receive a certificate of completion. This certificate is recognized by industry professionals.",
+      },
+      {
+        id: 3,
+        question: "Is there a discount for enrolling in multiple courses?",
+        answer:
+          "Yes! We offer discounts if you enroll in multiple courses at once. Contact our office for details on available packages and discounts.",
+      },
+      {
+        id: 4,
+        question: "What are the class timings?",
+        answer: "Class timings vary by course. Generally, we offer:",
+        answerBulletPoints: [
+          {
+            bulletHeading: "Morning Sessions",
+            bulletBody: " 9:00 AM to 12:00 PM.",
+          },
+          {
+            bulletHeading: "Afternoon Sessions",
+            bulletBody: " 1:00 PM to 4:00 PM.",
+          },
+          {
+            bulletHeading: "Evening Sessions",
+            bulletBody:
+              " 5:00 PM to 8:00 PM. For specific timings, please check with our team at the time of enrollment.",
+          },
+        ],
+      },
+      {
+        id: 5,
+        question: "How can I contact you for more information?",
+        answer: "For further queries, you can:",
+        answerBulletPoints: [
+          {
+            bulletBody: "Visit our office during working hours.",
+          },
+          {
+            bulletBody: "Call us at +88 01326-314022",
+          },
+          {
+            bulletBody: "Email us at info.flytechit@gmail.com",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "Flutter Mobile Apps Development",
+    slug: "flutter-mobile-apps-development",
+    description: `<div>
+    <h1 style="font-weight: 600;">🎯 ১. ভিজ্যুয়াল কমিউনিকেশনের যুগে দক্ষতা হিসেবে অপরিহার্য</h1>
+            <p style="margin-bottom: 12px;">
+              আজকাল সব কিছুই ভিজ্যুয়াল—ফেসবুক পোস্ট, ইউটিউব থাম্বনেইল, ওয়েবসাইট ডিজাইন, অ্যাপ, ব্র্যান্ডিং—সব জায়গায় ডিজাইনের ছোঁয়া দরকার।
+            </p>
+            <p style="margin-bottom: 12px;">
+              👉 গ্রাফিক ডিজাইন শিখলে তুমি এই আধুনিক ভাষায় কথা বলতে পারো।
+            </p>
+    <h1 style="font-weight: 600;">💼 ২. চাকরি ও ফ্রিল্যান্সিং—দুই জায়গাতেই চাহিদা বিশাল</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              দেশ-বিদেশে প্রচুর কোম্পানি গ্রাফিক ডিজাইনার খোঁজে।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              Freelancing মার্কেটপ্লেসে (Fiverr, Upwork) ডিজাইনারদের ডিমান্ড সবসময় বেশি।
+            </p>
+            <p style="margin-bottom: 12px;">
+              👉 কোর্স করলে এই মার্কেটের জন্য প্রয়োজনীয় স্কিল তৈরি হয়।
+            </p>
+            <h1 style="font-weight: 600;">💰 ৩. ইনকামের সুযোগ বাড়ে</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            কোর্স শেষে চাইলে চাকরি করতে পারো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            চাইলে পার্টটাইম বা ফুলটাইম ফ্রিল্যান্সিং করতে পারো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+            এমনকি নিজের ডিজাইন বেচেও আয় করা যায় (Creative Market, Etsy, Gumroad ইত্যাদিতে)।</p>
+            <h1 style="font-weight: 600;">🧠 ৪. সৃজনশীলতা (Creativity) কাজে লাগাতে পারো</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              যারা ক্রিয়েটিভ কাজ পছন্দ করে, তাদের জন্য এটা একদম পারফেক্ট।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              তুমি তোমার আইডিয়াকে ভিজ্যুয়াল রূপ দিতে পারো, যা অনেক তৃপ্তিদায়ক।
+            </p>
+            <h1 style="font-weight: 600;">🚀 ৫. ব্যক্তিগত ব্র্যান্ডিং ও বিজনেসেও কাজে লাগে</h1>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              তুমি যদি নিজের ব্র্যান্ড বা ছোট বিজনেস শুরু করো, তাহলে লোগো, পোস্ট, ব্রোশিওর, প্যাকেজ ডিজাইন—সব নিজেই করতে পারবে।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              আর ডিজাইনে ভালো হলে সোশ্যাল মিডিয়াতে সহজেই প্রফেশনাল প্রেজেন্স তৈরি হয়।
+            </p>
+            <h1 style="font-weight: 600;">🌐 ৬. ডিজিটাল দুনিয়ার সাথে আপডেট থাকার উপায়</h1>
+            <p style="margin-bottom: 12px;">
+              গ্রাফিক ডিজাইন শেখার মাধ্যমে তুমি:
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              Adobe Photoshop, Illustrator, Canva, Figma-এর মতো জনপ্রিয় টুলস শিখে ফেলো।
+            </p>
+            <p style="margin-bottom: 12px; margin-left: 12px;">
+              ডিজিটাল জগতে নিজেকে আরো প্রফেশনালভাবে উপস্থাপন করতে পারো।
+            </p>
+              <p>যেকোনো প্রয়োজনে যোগাযোগ করুন 01326314022 নাম্বারে।</p>
+          </div>`,
+    thumbnail: course8,
+    courseFee: 6000,
+    originalFee: 12000,
+    discount: 50,
+    totalProjects: "১০",
+    isOffer: true,
+    startDate: "5 May, 2025",
+    // startTime: "9:00 p.m.",
+    youWillGet: [
+      "অফলাইন",
+      "ক্লাস মেয়াদ ৪ মাস",
+      "সপ্তাহে ৩ দিন ক্লাস",
+      "৫০ + ক্লাস",
+      "২ ঘণ্টা ক্লাস টাইম",
+      "বেসিক টু এডভান্স লেভেল",
+      "১০ টা প্রোজেক্ট",
+      "রিয়েল-ওয়ার্ল্ড প্রজেক্ট",
+      "ফ্রিলাঞ্ছিং মার্কেট প্লেস",
+    ],
+    hoursOfLessons: "১০০+",
+    totalLessons: "৫০+",
+    duration: 4,
+    youWillLearn: [
+      "Introduction of Flutter",
+      "Setup and Installation",
+      "Dart Programming",
+      "Dart OOP(Object Oriented Programming)",
+      "Flutter Widget",
+      "Flutter User Input",
+      "Flutter Animation",
+      "Flutter Routing",
+      "Flutter Slivers",
+      "Flutter UI Design",
+      "Flutter State Management",
+      "Flutter Local Database",
+      "Flutter Networking",
+      "Firebase",
+      "Figma",
+      "Git , Github",
+      "Projects",
+      "Release App To Production",
+      "Career Guideline",
+    ],
+    community: [
+      {
+        title: "Flytech IT Support Group",
+        linkTitle: "Join The Group",
+        link: "https://www.facebook.com/groups/flytechitsupportgroup",
+      },
+      {
+        title: "Flytech IT Official Group",
+        linkTitle: "Join The Group",
+        link: "https://www.facebook.com/groups/flytechitcommunity",
+      },
+    ],
+    forWhom: [
+      "সৃজনশীল (Creative) মাইন্ডসেট যাদের আছে",
+      "যারা আঁকতে, ডিজাইন করতে বা রঙ ও ফর্ম নিয়ে কাজ করতে পছন্দ করে।",
+      "যারা ভিজ্যুয়াল আর্ট, লে-আউট, টাইপোগ্রাফি বা কম্পোজিশন নিয়ে আগ্রহী।",
+      "যারা ফাইন আর্টস, মিডিয়া, মার্কেটিং বা আইটি-র মতো বিষয়ে পড়ছে বা ক্যারিয়ার গড়তে চায়।",
+      "SSC/HSC পাশ করে স্কিল ডেভেলপ করতে চায়।",
+      "যারা Fiverr, Upwork, Freelancer.com-এর মতো প্ল্যাটফর্মে কাজ করে ইনকাম করতে চায়।",
+      "লোগো ডিজাইন, ব্যানার, সোশ্যাল মিডিয়া পোস্ট, ব্রোশিওর ডিজাইন ইত্যাদি করতে চায়।",
+      "যারা নিজের ব্র্যান্ড বা অন্যের ব্র্যান্ডের মার্কেটিং কনটেন্ট তৈরি করতে চায়।",
+      "ডিজাইন করতে পারলে আর আলাদা ডিজাইনার খোঁজার দরকার হয় না।",
+      "যারা নিজেই UI/UX ডিজাইন শিখে, ওয়েবসাইট বা অ্যাপের ডিজাইন করতে চায়।",
+      "যারা নিজের ব্র্যান্ডিং, লোগো, প্যাকেজ ডিজাইন, বা প্রমোশনাল ম্যাটেরিয়াল নিজে বানাতে চায়।",
+    ],
+    instructors: [
+      {
+        name: "Mokbul Hussain",
+        image: instructorLogo,
+        title: "Lead Instructor",
+        shortBio: "Software Engineer",
       },
     ],
     courseFAQ: [
