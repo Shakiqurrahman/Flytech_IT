@@ -98,16 +98,16 @@ const Header = () => {
                 } duration-300 grid gap-x-2 gap-y-4 grid-cols-3 w-[90%] max-w-[1000px] absolute z-10 bg-blac border border-gray-700/50 p-6 rounded-lg top-[70px] left-1/2 -translate-x-1/2  bg-[#030014]/20 backdrop-blur-[25px]`}
               >
                 {coursesNavLink?.map((course, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
-                  >
-                    <Image
-                      src={course?.logo}
-                      alt={course?.name}
-                      className="w-8"
-                    />
-                    <Link href={course?.link} className="font-semibold text-sm">
+                  <li key={index}>
+                    <Link
+                      href={course?.link}
+                      className="font-semibold text-sm flex items-center gap-2 hover:bg-white/10 p-4 rounded-lg"
+                    >
+                      <Image
+                        src={course?.logo}
+                        alt={course?.name}
+                        className="w-8"
+                      />
                       {course?.name}
                     </Link>
                   </li>
